@@ -14,7 +14,7 @@
                             <br>9324 Deer Trail
                             <br>Alpharetta, GA 30004
                             <br>
-                            <abbr title="Phone"><font-awesome-icon :icon="{ prefix: 'fas', iconName: 'phone' }" size="s"  rotation="90" /> </abbr> (770) 310-4371
+                            <abbr title="Phone"><font-awesome-icon :icon="{ prefix: 'fas', iconName: 'phone' }" size="xsc"  rotation="90" /> </abbr> (770) 310-4371
                         </address>
                     </div>
                     <div class="col-md-6 social_links">

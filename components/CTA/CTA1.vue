@@ -1,5 +1,5 @@
 <template>
-<no-ssr>
+<client-only>
     <div class="parallax-container">
                 <div class="aside-overlay">
                 <div class="container parallax-title">
@@ -39,7 +39,7 @@
                 </video>
             </Parallax>
     </div>
-</no-ssr>
+</client-only>
 </template>
 <script>
 import Parallax from "vue-parallaxy";
