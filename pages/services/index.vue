@@ -1,5 +1,6 @@
 <template>
-    <section id="about" class="text-center animated fadeIn">
+    <div>
+        <section id="about" class="text-center animated fadeIn">
             <div class="container-fluid servHead">
                 <div class="row">
                     <div class="col-lg-12">
@@ -54,8 +55,10 @@
                     </div>
                 </div>
             </div>
-            <CTA2 />
+            
         </section>
+        <CTA2 />
+    </div>
 </template>
 <script>
 import CTA2 from '~/components/CTA/CTA2.vue'
