@@ -81,6 +81,7 @@ components: {
 </script>
 
 <style scoped>
+
 	.bg-parallax-dark {
     min-height: 65vh;
     display: flex;
@@ -94,7 +95,10 @@ components: {
     width: 13%;
     margin-left: 44em;
     z-index: 2000;
-}
+    }
+    video#bgvideo {
+    width: 100%;
+    }
 	img#logoCta2, img#logoCta3 {
     z-index: 1000;
     margin: auto;
