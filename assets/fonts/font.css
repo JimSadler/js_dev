@@ -1,0 +1,53 @@
+/* Fonts */
+@font-face {
+font-family: 'proximanova-light-webfont';
+src: url('~assets/fonts/Proxima_Nova/proximanova-light-webfont.woff2') format('woff2'),
+    url( '~assets/fonts/Proxima_Nova/proximanova-light-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+
+}
+@font-face {
+    font-family: 'proximanova-semi';
+    src: url('~assets/fonts/Proxima_Nova/proximanova-semibold-webfont.woff') format('woff2');
+    font-weight: 400;
+    
+}
+@font-face {
+font-family: 'proximanova-bold-webfont';
+src: url('~assets/fonts/Proxima_Nova/proximanova-bold-webfont.woff2') format('woff2'),
+    url( '~assets/fonts/Proxima_Nova/proximanova-bold-webfont.woff') format('woff');
+font-weight: bold;
+font-style: bold;
+
+}
+
+@font-face {
+font-family: 'NoirPro-SemiBold';
+src: url( '~assets/fonts/Noir_Web_Font/NoirPro-SemiBold.woff2') format('woff2'),
+    url( '~assets/fonts/Noir_Web_Font/NoirPro-SemiBold.woff') format('woff');
+font-weight: bold;
+font-style: bold;
+}
+@font-face {
+    font-family: 'NoirPro-Medium';
+    src: url( '~assets/fonts/Noir_Web_Font/NoirPro-Medium.woff2') format('woff2'),
+        url( '~assets/fonts/Noir_Web_Font/NoirPro-Medium.woff') format('woff');
+    font-weight: 400;
+    
+    }
+@font-face {
+font-family: 'NoirPro-Light';
+src: url( '~assets/fonts/Noir_Web_Font/NoirPro-Light.woff2') format('woff2'),
+    url( '~assets/fonts/Noir_Web_Font/NoirPro-Light.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'NoirPro-Light';
+src: url( '~assets/fonts/Noir_Web_Font/NoirPro-Light.woff2') format('woff2'),
+    url( '~assets/fonts/Noir_Web_Font/NoirPro-Light.woff') format('woff');
+font-weight: medium;
+font-style: medium;
+}

@@ -1,0 +1,15 @@
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+/* Plugins */
+
+import nuxt_plugin_bootstrapvue_6b13cecd from 'nuxt_plugin_bootstrapvue_6b13cecd' // Source: ./bootstrap-vue.js (mode: 'all')
+
+library.add(faEnvelope)
+library.add(faLinkedin)
+library.add(faFacebook)
+library.add(faTwitter)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
