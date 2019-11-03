@@ -52,11 +52,11 @@ data() {
             slide: 0,
             sliding: null,
             videos: [
-                require('~/assets/video/BO_A012_C031_SDR_20190726_SDR_2K_AVC copy.mp4'),
-                require('~/assets/video/PA_A004_C003_SDR_20190719_SDR_2K_AVC.mp4'),
-                require('~/assets/video/SE_A016_C009_SDR_20190717_SDR_2K_AVC.mp4'),
-                require('~/assets/video/BO_A018_C029_SDR_20190812_SDR_2K_AVC.mp4'),
-                require('~/assets/video/PA_A002_C009_SDR_20190730_ALT01_SDR_2K_AVC.mp4')
+                require('~/assets/video/Baraccuda.mp4'),
+                require('~/assets/video/CoralReef.mp4'),
+                require('~/assets/video/Jellies.mp4'),
+                require('~/assets/video/SeaLions.mp4'),
+                require('~/assets/video/Starfish.mp4')
             ],
             selectedVideo: ''
         }
