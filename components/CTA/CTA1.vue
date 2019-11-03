@@ -23,7 +23,6 @@
                                 <b-carousel-slide caption="Accessibility Built In" img-blank img-alt="" img-blank-color="transparent"></b-carousel-slide>
                                 
                             </b-carousel>
-                       
                             <div class="CTA-logo1">
                                 <div class="cta_button1 col-md-3 col-sm-3 col-xs-6 animated lightSpeedIn">
                                     <a href="mailto:jim@jsdevelopment.tech" class="btn btn-sm animated-button victoria-three"><img alt="Click to send an email and get started" id="logoCta3" src="~assets/img/icons/jslogo-white.png">Get Started</a>
