@@ -1,5 +1,5 @@
 <template>
-<no-ssr>
+<client-only>
     <div class="parallax-container">
                 <div class="aside-overlay">
                 <div class="container parallax-title">
@@ -37,7 +37,7 @@
                 <img src="~assets/img/1920x1080-space-galaxy-universe-stars-11476-min.jpg" alt="">
             </Parallax>
     </div>
-</no-ssr>
+</client-only>
 </template>
 <script>
 import Parallax from "vue-parallaxy";
