@@ -17,11 +17,10 @@
       
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
-        
-        <b-nav-item><nuxt-link to="/services">Services</nuxt-link></b-nav-item>
-        <b-nav-item><nuxt-link to="/work">Work</nuxt-link></b-nav-item>
+        <b-nav-item router-tag='a' to="/services">Services</b-nav-item>
+        <b-nav-item to="/work" router-tag='a'>Work</b-nav-item>
         <!-- <b-nav-item><nuxt-link to="/experiments">Experiments</nuxt-link></b-nav-item> -->
-        <b-nav-item><nuxt-link to="/testimonials">Testimonials</nuxt-link></b-nav-item>
+        <b-nav-item router-tag="a" to="/testimonials">Testimonials</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
