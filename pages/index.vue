@@ -32,7 +32,7 @@
                     </b-carousel> -->
 
                     <div class="CTA-logo0">
-                        <div class="cta_button0 col-md-3 col-sm-3 col-xs-6 animated lightSpeedIn">
+                        <div class="cta_button0 animated lightSpeedIn">
                             <a href="#contact" class="btn btn-sm animated-button victoria-three hero">
                               <!-- <img alt="Click to send an email and get started" id="logoCta1" src="~assets/img/icons/jslogo-white.png"> -->
                               Get Started</a>

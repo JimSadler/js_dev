@@ -110,10 +110,7 @@ section.text-center.testimonial {
   margin-bottom: 5%;
 }
 .spin {
-  /* margin: 20px; */
-  /* width: 100px; */
-  /* height: 100px; */
-  /* background: #f00; */
+ 
   -webkit-animation-name: spin;
   -webkit-animation-duration: 15000ms;
   -webkit-animation-iteration-count: infinite;

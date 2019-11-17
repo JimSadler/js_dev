@@ -169,7 +169,7 @@ footer p.animated.flipInX {
   color: #f4f5f7;
   background-color: #272b31;
 	margin-top: -5%;
-	height: 
+	
 }
 .footer-1 .lower {
   padding: 15px 0;
