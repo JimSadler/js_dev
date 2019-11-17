@@ -32,8 +32,8 @@
                     </div>
                 </div>
             </div>
-            <Parallax :speed-factor="0.3" breakpoint="(min-width: 50px)" fixed>
-                <video autoplay muted loop id="bgvideo" >
+            <Parallax :speed-factor="0.3" breakpoint="(min-width: 50px)" >
+                <video autoplay muted loop id="bgvideo" is-fixed="true" breakpoint="(min-width: 768px)" >
                     <source :src="selectedVideo" :type="videoType">
                 </video>
             </Parallax>
@@ -91,9 +91,10 @@ components: {
     
 	}
 	.cta_button1 {
-    width: 13%;
-    margin-left: 44em;
+    width: 20%;
+    margin-left: 41%;
     z-index: 2000;
+    text-align: center;
     }
     video#bgvideo {
     width: 100%;
@@ -104,8 +105,8 @@ components: {
     width: 28%;
 }
 	.CTA-logo1 {
-    margin-right: -32%;
-    margin-left: -24%;
+    margin-right: 0%;
+    margin-left: 0%;
 }
 
 
@@ -218,5 +219,10 @@ h1,h2,h3,h4,h5,h6 {
 } */
 a {
   font-family: 'NoirPro_light', Fallback, sans-serif;
+}
+@media (max-width: 768px){
+    .parallax-container {
+    display: none;
+}
 }
 </style>

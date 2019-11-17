@@ -1,16 +1,16 @@
 <template>
   <section id="work" class="portfolio-1 animated fadeIn">
-            <b-container class="container">
-                <b-row class="row">
+            <b-container >
+                <b-row class="">
                     <b-col cols="12" class="text-center">
                         <h2 class='page-title'>The Work</h2>
                         <hr class="primary">
                     </b-col>
                 </b-row>
                 
-                <b-row class="row" data-scrollreveal="enter bottom over 1.5s">
+                <b-row data-scrollreveal="enter bottom over 1.5s">
                     <!-- <div class="isotope"> -->
-                        <b-col cols="4" class="col-sm-4 portfolio-item web">
+                        <b-col cols="12" class="col-sm-4 portfolio-item web">
                             <a class="portfolio-link" role="button" v-b-modal.modal-scrollable1>
                                 <div class="caption">
                                     <div class="caption-content">
@@ -24,7 +24,7 @@
                             </a>
                         
                         </b-col>
-                        <b-col cols="4" class="col-sm-4 portfolio-item web design">
+                        <b-col cols="12" class="col-sm-4 portfolio-item web design">
                             <a class="portfolio-link" role="button" v-b-modal.modal-scrollable2>
                                 <div class="caption">
                                     <div class="caption-content">
@@ -38,7 +38,7 @@
                             </a>
                             
                         </b-col>
-                        <b-col cols="4" class="col-sm-4 portfolio-item web design">
+                        <b-col cols="12" class="col-sm-4 portfolio-item web design">
                             <a class="portfolio-link" role="button" v-b-modal.modal-scrollable3>
                                 <div class="caption">
                                     <div class="caption-content">
@@ -51,7 +51,7 @@
                                 <img src="~assets/img/portfolio/Neighborhood-Roofs.png" class="img-centered" alt="">
                             </a>
                         </b-col>
-                        <b-col cols="4" class="col-sm-4 portfolio-item web">
+                        <b-col cols="12" class="col-sm-4 portfolio-item web">
                             <a class="portfolio-link" role="button" v-b-modal.modal-scrollable4>
                                 <div class="caption">
                                     <div class="caption-content">
@@ -65,7 +65,7 @@
                             </a>
                             
                         </b-col>
-                        <b-col class="col-sm-4 portfolio-item web">
+                        <b-col cols="12" class="col-sm-4 portfolio-item web">
                             <a class="portfolio-link" role="button" v-b-modal.modal-scrollable5>
                                 <div class="caption">
                                     <div class="caption-content">
@@ -79,7 +79,7 @@
                             </a>
                             
                         </b-col>
-                        <b-col class="col-sm-4 portfolio-item web design">
+                        <b-col cols="12" class="col-sm-4 portfolio-item web design">
                             <a class="portfolio-link" role="button" v-b-modal.modal-scrollable6>
                                 <div class="caption">
                                     <div class="caption-content">
@@ -93,7 +93,7 @@
                             </a>
                             
                         </b-col>
-                        <b-col class="col-sm-4 portfolio-item web">
+                        <b-col cols="12" class="col-sm-4 portfolio-item web">
                             <a class="portfolio-link" role="button" v-b-modal.modal-scrollable7>
                                 <div class="caption">
                                     <div class="caption-content">
@@ -262,5 +262,10 @@ li {
     margin-bottom: 0;
     line-height: 1.5;
     font-size: 25px;
+}
+@media (max-width: 768px){
+a.portfolio-link img[data-v-51b5538d] {
+    width: 294px;
+}
 }
 </style>

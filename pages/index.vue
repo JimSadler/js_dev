@@ -5,13 +5,15 @@
       <div class=" home container-fluid">
         <div class="home-content">
           <!-- <logo /> -->
-          <div class="intro-body animated zoomInUp">
-                <b-container class="carousel-container">
+          <div class="intro-body animated zoomInUp ">
+                <b-container class=" row carousel-container">
+                  <b-col cols="12">
                     <h1 class="brand-heading">
                         We <span class="text-primary">Build and Design </span><br> Web <span class="text-primary">Solutions</span>
                     </h1>
+                    </b-col>
                     <hr class="light">
-                    <b-carousel
+                    <!-- <b-carousel
                         id="carousel-1"
                         v-model="slide"
                         :interval="4000"
@@ -27,7 +29,7 @@
                     <b-carousel-slide caption="With advantages of Responsive Design" img-blank img-alt="" img-blank-color="transparent"></b-carousel-slide>
                     <b-carousel-slide caption="Accessibility Built In" img-blank img-alt="" img-blank-color="transparent"></b-carousel-slide>
                       
-                    </b-carousel>
+                    </b-carousel> -->
 
                     <div class="CTA-logo0">
                         <div class="cta_button0 col-md-3 col-sm-3 col-xs-6 animated lightSpeedIn">
@@ -84,7 +86,6 @@
         </div>
        
       </section>
-       <!-- <clientcaro /> -->
 
     </div>
     <CTA1 />
@@ -96,14 +97,13 @@
 import Logo from '~/components/Logo.vue'
 import CTA1 from '~/components/CTA/CTA1.vue'
 import Parallax from "vue-parallaxy";
-import clientcaro from '~/components/Carousel/Client_Carousel.vue'
-
 export default {
+  
   components: {
     Logo,
     CTA1,
     Parallax,
-    clientcaro
+    
   },
   data() {
       return {
@@ -130,16 +130,22 @@ export default {
     opacity: 0;
     transform-origin: 50% 50%;
   }
-.home.container-fluid {
+.home {
   /* margin: -60px 0 60px; */
-  min-height: 115vh;
+  min-height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-image: url("~assets/img/tuzfcmnbhdmkderydepl.jpg");
   background-size: cover;
-  margin-top: -3.6%;
+  margin-top: -7.6%;
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* height: 100%; */
+  background-position: 53% top;
+  margin-top: -7%;
   
 }
 .home_background {
@@ -159,9 +165,9 @@ h1.brand-heading {
 .text-primary {
     color: #25CE88!important;
 }
-.container {
+/* .container {
     width: 1140px;
-}
+} */
 .carousel-inner{
   width:100%;
   /* max-height: 200px !important; */
@@ -255,13 +261,14 @@ a.animated-button.victoria-three:hover:after {
     opacity: 1;
 }
 .cta_button0 {
-    width: 13%;
-    margin-left: 44em;
+    
+    margin-left: 0%;
     z-index: 2000;
+    margin-top: 200px;
 }
 .CTA-logo0 {
-    margin-right: -32%;
-    margin-left: -24%;
+    margin-right: 0%;
+    margin-left: 40%;
     margin-top: 5%;
 }
 .title {
@@ -348,5 +355,27 @@ p {
 @keyframes spin {
     from {transform:rotateY(0deg);}
     to {transform:rotateY(360deg);}
+}
+@media (max-width: 768px){
+
+  .cta_button0 {
+    width: 200px;
+    margin-left: 2%;
+    z-index: 2000;
+    margin-top: 200px;
+}
+.CTA-logo0 {
+    margin-left: 21%;
+    margin-top: 5%;
+}
+h1.brand-heading {
+  margin-top: 5%;
+}
+.row.carousel-container.container {
+    margin-left: 0%;
+}
+.home {
+    margin-top: -19%;
+  }
 }
 </style>

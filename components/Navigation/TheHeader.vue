@@ -18,7 +18,7 @@
       <li class="nav-item"><nuxt-link to="/services">Services</nuxt-link></li>
       <!-- <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li> -->
       <li class="nav-item"><nuxt-link to="/work">Work</nuxt-link></li>
-      <!-- <li class="nav-item"><nuxt-link to="/experiments">Experiments</nuxt-link></li> -->
+      <li class="nav-item"><nuxt-link to="/experiments">Experiments</nuxt-link></li>
       <li class="nav-item"><nuxt-link to="/testimonials">Testimonials</nuxt-link></li>
     </ul>
   </div>
@@ -69,9 +69,10 @@ height: 60px;
 width: 30%;
 margin-top: 10%;
 }
-.the-header.classB {
+/* .the-header.classB {
   background-color: #272B31;
-}
+} */
+
 .the-header {
 width: 100%;
 position: fixed;
@@ -79,7 +80,7 @@ height: 60px;
 display: flex;
 justify-content: space-around;
 align-items: center;
-background-color: transparent;
+background-color: black;
 z-index: 100;
 box-sizing: border-box;
 padding: 0 20px;
