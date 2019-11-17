@@ -149,8 +149,13 @@ section.text-center.testimonial {
     transform: rotateY(360deg);
   }
 }
+section.text-center.testimonial {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 100px;
+}
 @media (max-width: 768px){
-  .testimon.container-fluid[data-v-594970e0] {
+  .testimon.container-fluid {
       margin-top: -19%;
   }
   .testLogo2 {
