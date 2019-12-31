@@ -1,22 +1,25 @@
 <template>
   <div>
     <div class="testimon container-fluid">
-      <header class="intro-img intro-dark-bg test_background animated fadeIn">
+      <header class="intro-img intro-dark-bg test_background">
         <!--<div class="overlay"></div>-->
         <div class="intro-body animated zoomInUp">
-          <div class="container animated fadeIn">
+          <div class="container animated">
             <h1 class="brand-heading">Testimonials</h1>
             <!-- <hr class="light"> -->
           </div>
         </div>
       </header>
     </div>
-    <section class="text-center testimonial">
+    <section class="text-center testimonial animated fadeIn">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <img
-              class="testLogo0 animated flip spin" alt src="~assets/img/icons/m-logo-circle-fill-about1.png" />
+              class="testLogo0 animated flip spin"
+              alt
+              src="~assets/img/icons/m-logo-circle-fill-about1.png"
+            />
             <p>
               What a find Jim Sadler is! Jim did the best website for me that I have ever had: beautiful, easy to negotiate, sophisticated, and available to all platforms. Jim has
               the intuition to understand exactly what I need and his technical skills are masterful as he works to bring forth our vision. I continue my relationship with Jim
@@ -40,9 +43,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <img class="testLogo2 animated flip spin"
-              alt
-              src="~assets/img/icons/dronep7-fa.png" />
+            <img class="testLogo2 animated flip spin" alt src="~assets/img/icons/dronep7-fa.png" />
             <p>
               Jim Sadler of JS Development is a website wizard. Everything I asked for was delivered in a timely fashion, while also exceeding my expectations! My website
               is easy to navigate, aesthetically pleasing, and professional all at the same time! What more could you ask for? Jim truly brought my website to life!
@@ -55,9 +56,7 @@
   </div>
 </template>
 <script>
-export default {
-  
-}
+export default {}
 </script>
 
 <style scoped>
@@ -66,12 +65,12 @@ export default {
   padding: 30px;
 }
 .testLogo2 {
-  width: 8%; 
-  margin-bottom:1em;
+  width: 8%;
+  margin-bottom: 1em;
 }
 .testLogo0 {
-  width: 6%; 
-  margin-bottom:1em;
+  width: 6%;
+  margin-bottom: 1em;
 }
 .testimon.container-fluid {
   /* margin: -60px 0 60px; */
@@ -87,7 +86,6 @@ export default {
   /* height: 100%; */
   background-position: 53% top;
   margin-top: -7%;
-  
 }
 /* .test_background {
   margin: -60px 0 60px;
@@ -110,7 +108,6 @@ section.text-center.testimonial {
   margin-bottom: 5%;
 }
 .spin {
- 
   -webkit-animation-name: spin;
   -webkit-animation-duration: 15000ms;
   -webkit-animation-iteration-count: infinite;
@@ -150,21 +147,21 @@ section.text-center.testimonial {
   }
 }
 section.text-center.testimonial {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding-bottom: 100px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 100px;
 }
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .testimon.container-fluid {
-      margin-top: -19%;
+    margin-top: -19%;
   }
   .testLogo2 {
-    width: 15%; 
-    margin-bottom:1em;
+    width: 15%;
+    margin-bottom: 1em;
   }
   .testLogo0 {
-    width: 10%; 
-    margin-bottom:1em;
+    width: 10%;
+    margin-bottom: 1em;
   }
 }
 </style>

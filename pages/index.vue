@@ -1,7 +1,6 @@
 <template>
   <div>
     <div>
-     
       <div class=" home container-fluid">
         <div class="home-content">
           <!-- <logo /> -->
