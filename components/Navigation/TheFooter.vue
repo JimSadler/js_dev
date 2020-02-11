@@ -114,6 +114,9 @@ export default {
 </script>
 
 <style scoped>
+footer {
+  margin-top: 10%;
+  }
 #logo1 img, .Test #logo1 img {
     margin-top: -29px;
     width: 8%;
