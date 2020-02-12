@@ -1,113 +1,142 @@
 <template>
+  <b-container fluid class="default_layout">
+    <b-navbar toggleable="lg" type="dark" variant="info" sticky id="nav0">
+      <b-navbar-brand>
+        <div class="logo animated flipInX">
+          <transition name="logo">
+            <img
+              class="head_logo animated"
+              src="~/assets/img/negative-space-rt copy.png"
+              v-on:load="onLoaded"
+              v-show="loaded"
+              alt
+            />
+          </transition>
+          <transition name="logo-text" enter-active-class>
+            <nuxt-link style="animation-duration: 0.3s" class="logo-text" to="/">
+              <svg
+                id="demo"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 200 80"
+                width="2000"
+                height="800"
+              >
+                <!-- <rect id="background" x="0" y="0" width="200" height="60" fill="#262626" /> -->
 
-  <b-container fluid class=" default_layout">
-    <b-navbar toggleable="lg" type="dark" variant="info" sticky class="is-transparent" id="nav0">
-    <b-navbar-brand >
-      <div class="logo animated flipInX" >
-      <transition name="logo" >
-        <img class="head_logo animated " src="~/assets/img/negative-space-rt copy.png" v-on:load="onLoaded" v-show="loaded" alt="">
-      </transition>
-      <transition name="logo-text" enter-active-class="bounceInRight" >
-        <nuxt-link style="animation-duration: 0.3s" class="logo-text" to="/">J.S. Development</nuxt-link>
-      </transition>
-  </div>
-    </b-navbar-brand>
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-    <b-collapse id="nav-collapse" is-nav>
-      
-      <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">
-        <b-nav-item router-tag='a' to="/services">Services</b-nav-item>
-        <b-nav-item to="/work" router-tag='a'>Work</b-nav-item>
-        <!-- <b-nav-item><nuxt-link to="/experiments">Experiments</nuxt-link></b-nav-item> -->
-        <b-nav-item router-tag="a" to="/testimonials">Testimonials</b-nav-item>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
+                <text
+                  id="theText"
+                  transform="translate(100 50)"
+                  stroke-dasharray="100"
+                  stroke-dashoffset="100"
+                  text-anchor="middle"
+                  font-size="18"
+                  fill="transparent"
+                  stroke="#fff"
+                  stroke-width="0.55"
+                  stroke-miterlimit
+                  stroke-linejoin="miter"
+                >JS Development</text>
+              </svg>
+            </nuxt-link>
+          </transition>
+        </div>
+      </b-navbar-brand>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-collapse id="nav-collapse" is-nav>
+        <!-- Right aligned nav items -->
+        <b-navbar-nav class="ml-auto">
+          <b-nav-item router-tag="a" to="/services">Services</b-nav-item>
+          <b-nav-item to="/work" router-tag="a">Work</b-nav-item>
+          <!-- <b-nav-item><nuxt-link to="/experiments">Experiments</nuxt-link></b-nav-item> -->
+          <b-nav-item router-tag="a" to="/testimonials">Testimonials</b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
     <nuxt />
     <TheFooter />
   </b-container>
 </template>
 <script>
-
 import TheFooter from '@/components/Navigation/TheFooter'
+import { TimelineLite, TimelineMax } from 'gsap'
 export default {
   components: {
     TheFooter
-    
   },
-data: function() {
+  data: function() {
     return {
       loaded: false,
       show: false,
       scrollPosition: null
     }
-},
-    methods: {
+  },
+  methods: {
     onLoaded() {
-      this.loaded = true;
+      this.loaded = true
     },
     onFadeIn() {
-      this.show = true;
+      this.show = true
     },
     updateScroll() {
       this.scrollPosition = window.scrollY
     }
-    
   },
   mounted() {
-      this.$nextTick(function(){
-        window.addEventListener("scroll", function(){
-          var navbar = document.getElementById("nav0")
-          var nav_classes = navbar.classList
-          if(document.documentElement.scrollTop >= 750) {
-            if (nav_classes.contains("shrink") === false) {
-              nav_classes.toggle("shrink");
-            }
+    var tl = new TimelineMax({
+      repeat: 0,
+      repeatDelay: -1
+    })
+    tl.to('#theText', 3, { strokeDashoffset: 0 })
+
+    this.$nextTick(function() {
+      window.addEventListener('scroll', function() {
+        var navbar = document.getElementById('nav1')
+        var nav_classes = navbar.classList
+        if (document.documentElement.scrollTop >= 750) {
+          if (nav_classes.contains('shrink') === false) {
+            nav_classes.toggle('shrink')
           }
-          else {
-            if (nav_classes.contains("shrink") === true) {
-              nav_classes.toggle("shrink");
-            }
+        } else {
+          if (nav_classes.contains('shrink') === true) {
+            nav_classes.toggle('shrink')
           }
-        })
+        }
       })
-    }
-  
+    })
+  }
 }
 </script>
-<style>
+<style >
 .navbar-dark .navbar-toggler {
-    color: #fff;
-    border-color: #fff;
+  color: #fff;
+  border-color: #fff;
 }
 .default_layout {
   padding: 0;
   margin: 0;
 }
 #nav0 {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 nav {
   padding: 1rem;
   transition: all 0.5s;
   background: white;
-  
 }
 #nav0.shrink {
-    padding: 0.3rem;
-    background: #272B31!important;
+  padding: 0.3rem;
+  background: #272b31 !important;
 }
 nav a {
-    margin-right: 1rem;
-    color: #fff;
-    text-decoration: none;
-    background-color: transparent;
-    transition: .7s;
+  margin-right: 1rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+  transition: 0.7s;
 }
 nav a:hover {
-    color: #28CE88;
-    text-decoration: underline;
+  color: #28ce88;
+  text-decoration: underline;
 }
 *,
 *:before,
@@ -145,23 +174,19 @@ nav a:hover {
   background-color: #35495e;
 }
 nav.navbar.classA {
-    background-color: transparent !important;
-    transition: .7s;
+  background-color: transparent !important;
+  transition: 0.7s;
 }
 nav.navbar.classB {
-    background-color: #272A31 !important;
-     transition: .7s;
+  background-color: #272a31 !important;
+  transition: 0.7s;
 }
 nav.navbar.sticky-top.navbar-dark.bg-info {
-    height: 70px;
+  height: 70px;
 }
-   .head_logo {
-    width: 30%;
-    margin-top: 2%;
-    margin-left: 5%;
-}
+
 .logo.animated {
-    margin-top: 12%;
+  margin-top: 12%;
 }
 .header-container {
   height: 60px;
@@ -183,14 +208,13 @@ a.logo-text {
   font-size: 25px;
   transition: 0.5s;
   margin-left: -10%;
-  
 }
 a.logo-text:hover {
-  color: #28CE88;
+  color: #28ce88;
   text-decoration: none;
 }
-@media (max-width: 768px){
-    .head_logo {
+@media (max-width: 768px) {
+  .head_logo {
     width: 19%;
     margin-top: -1%;
     margin-left: -1%;
@@ -199,9 +223,9 @@ a.logo-text:hover {
     display: none;
   } */
   .home {
-   margin-top: -18.6%;
-}
-a.logo-text {
+    margin-top: -18.6%;
+  }
+  a.logo-text {
     color: #fff;
     font-family: 'NoirPro-SemiBold', Fallback, sans-serif;
     font-size: 18px;
@@ -212,8 +236,6 @@ a.logo-text {
     margin-top: 2%;
     width: 39%;
     width: 113%;
+  }
 }
-
-}
-
 </style>

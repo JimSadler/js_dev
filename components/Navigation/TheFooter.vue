@@ -12,12 +12,13 @@
                   alt="JS Development Homepage"
                   src="~assets/img/negative-space-rt.svg"
                 />
-                <p class="animated flipInX" id="logo-tag-nav1">J.S. Development</p>
+                <p class="animated flipInX" id="logo-tag-nav1">
+                  J.S. Development
+                </p>
               </a>
             </div>
             <address>
-              <br />9324 Deer Trail
-              <br />Alpharetta, GA 30004
+              <br />9324 Deer Trail <br />Alpharetta, GA 30004
               <br />
               <abbr title="Phone">
                 <font-awesome-icon
@@ -25,7 +26,8 @@
                   size="xs"
                   rotation="90"
                 />
-              </abbr> (770) 310-4371
+              </abbr>
+              (770) 310-4371
             </address>
           </div>
           <div class="col-lg-6 social_links">
@@ -45,7 +47,10 @@
                   class="btn btn-social-light btn-facebook"
                   aria-label="Facebook"
                 >
-                  <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook-f' }" size="lg" />
+                  <font-awesome-icon
+                    :icon="{ prefix: 'fab', iconName: 'facebook-f' }"
+                    size="lg"
+                  />
                 </a>
               </li>
               <li>
@@ -54,7 +59,10 @@
                   class="btn btn-social-light btn-twitter"
                   aria-label="Twitter"
                 >
-                  <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter'}" size="lg" />
+                  <font-awesome-icon
+                    :icon="{ prefix: 'fab', iconName: 'twitter' }"
+                    size="lg"
+                  />
                 </a>
               </li>
               <li>
@@ -63,9 +71,20 @@
                   aria-label="LinkedIn"
                   class="btn btn-social-light btn-dribbble"
                 >
-                  <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'linkedin-in' }" size="lg" />
+                  <font-awesome-icon
+                    :icon="{ prefix: 'fab', iconName: 'linkedin-in' }"
+                    size="lg"
+                  />
                 </a>
               </li>
+              <!-- <li>
+                <nuxt-link
+                  style="animation-duration: 0.3s"
+                  class="logo-text"
+                  to="/login"
+                  >Login</nuxt-link
+                >
+              </li> -->
             </ul>
           </div>
         </div>
@@ -80,7 +99,11 @@
           <div class="col-md-6 me-tag">
             <a href="https://www.jsdevelopment.tech" target="_blank">
               <!-- <i class="fa fa-cog fa-spin fa-lg"></i>  -->
-              <font-awesome-icon :icon="{ prefix: 'fas', iconName: 'cog' }" size="lg" spin />Website developed by JS Development
+              <font-awesome-icon
+                :icon="{ prefix: 'fas', iconName: 'cog' }"
+                size="lg"
+                spin
+              />Website developed by JS Development
             </a>
           </div>
         </div>
@@ -88,7 +111,7 @@
     </div>
   </footer>
 </template>
-    <script>
+<script>
 import TheSideNavToggle from '@/components/Navigation/TheSideNavToggle'
 
 export default {
@@ -114,17 +137,21 @@ export default {
 </script>
 
 <style scoped>
-#logo1 img, .Test #logo1 img {
-    margin-top: -29px;
-    width: 8%;
-    margin-left: -3.2em;
-    display: inline-block;
-    padding-bottom: 0.3em;
+footer {
+  margin-top: 5%;
+}
+#logo1 img,
+.Test #logo1 img {
+  margin-top: -29px;
+  width: 8%;
+  margin-left: -3.2em;
+  display: inline-block;
+  padding-bottom: 0.3em;
 }
 #logo-container1 {
-	list-style: none;
-	margin-bottom: -3.2em;
-	margin-left: 20%;
+  list-style: none;
+  margin-bottom: -3.2em;
+  margin-left: 20%;
 }
 #logo-tag1 img,
 .Test #logo-tag1 img {
@@ -168,19 +195,18 @@ footer p.animated.flipInX {
   padding: 50px 0;
   color: #f4f5f7;
   background-color: #272b31;
-	margin-top: -5%;
-	
+  margin-top: -5%;
 }
 .footer-1 .lower {
   padding: 15px 0;
   background-color: #111214;
 }
 address {
-	margin-bottom: 20px;
-	font-style: normal;
-	line-height: 1.42857143;
-	margin-top: 3.5%;
-	margin-left: 20%;
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 1.42857143;
+  margin-top: 3.5%;
+  margin-left: 20%;
 }
 .rotating {
   transition: transform 1s ease-in-out;
@@ -370,7 +396,7 @@ address {
   transform-origin-z: initial;
 }
 svg.svg-inline--fa.fa-cog {
-    margin-right: .17em;
+  margin-right: 0.17em;
 }
 @media (max-width: 768px) {
   .footer {
@@ -401,26 +427,26 @@ svg.svg-inline--fa.fa-cog {
     font-family: 'NoirPro_light', Fallback, sans-serif;
     color: #fff;
     text-align: center;
-		margin-top: 0.5%;
-		margin-left: 0%;
+    margin-top: 0.5%;
+    margin-left: 0%;
   }
-	.list-inline {
+  .list-inline {
     text-align: center;
-		float: none;
-	}
-	.footer-1 .lower {
+    float: none;
+  }
+  .footer-1 .lower {
     text-align: center;
-	}
-	.me-tag {
+  }
+  .me-tag {
     text-align: center;
     font-size: 12px;
-	}
+  }
   .svg-inline--fa {
     display: inline-block;
     font-size: inherit;
-    height: .8em;
+    height: 0.8em;
     overflow: visible;
-    vertical-align: -.125em;
+    vertical-align: -0.125em;
   }
 }
 </style>

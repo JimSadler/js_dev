@@ -202,11 +202,7 @@ nav.navbar.classB {
 nav.navbar.sticky-top.navbar-dark.bg-info {
   height: 70px;
 }
-.head_logo {
-  width: 7%;
-  margin-top: 3%;
-  margin-left: 5%;
-}
+
 .logo.animated {
   margin-top: 12%;
 }

@@ -2,10 +2,10 @@
   <b-container fluid class="default_layout">
     <b-navbar toggleable="lg" type="dark" variant="info" sticky id="nav1">
       <b-navbar-brand>
-        <div class="logo">
+        <div class="logo animated flipInX">
           <transition name="logo">
             <img
-              class="head_logo animated fadeInLeft"
+              class="head_logo animated"
               src="~/assets/img/negative-space-rt copy.png"
               v-on:load="onLoaded"
               v-show="loaded"
@@ -13,7 +13,11 @@
             />
           </transition>
           <transition name="logo-text" enter-active-class>
-            <nuxt-link style="animation-duration: 0.3s" class="logo-text" to="/">
+            <nuxt-link
+              style="animation-duration: 0.3s"
+              class="logo-text"
+              to="/"
+            >
               <svg
                 id="demo"
                 xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +39,9 @@
                   stroke-width="0.55"
                   stroke-miterlimit
                   stroke-linejoin="miter"
-                >JS Development</text>
+                >
+                  JS Development
+                </text>
               </svg>
             </nuxt-link>
           </transition>
@@ -48,7 +54,9 @@
           <b-nav-item router-tag="a" to="/services">Services</b-nav-item>
           <b-nav-item to="/work" router-tag="a">Work</b-nav-item>
           <!-- <b-nav-item><nuxt-link to="/experiments">Experiments</nuxt-link></b-nav-item> -->
-          <b-nav-item router-tag="a" to="/testimonials">Testimonials</b-nav-item>
+          <b-nav-item router-tag="a" to="/testimonials"
+            >Testimonials</b-nav-item
+          >
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -139,7 +147,8 @@ nav {
   background: #272b31 !important;
 }
 #nav1 #nav-collapse {
-  background-color: rgba(39, 43, 49, 0.8);
+  background-color: rgba(39, 43, 49, 0.9);
+  height: 150px;
 }
 nav a {
   margin-right: 1rem;
@@ -198,13 +207,9 @@ nav.navbar.classB {
 nav.navbar.sticky-top.navbar-dark.bg-info {
   height: 70px;
 }
-.head_logo {
-  width: 7%;
-  margin-top: 3%;
-  margin-left: 5%;
-}
+
 .logo.animated {
-  margin-top: 12%;
+  margin-top: 0%;
 }
 .header-container {
   height: 60px;
@@ -215,6 +220,7 @@ nav.navbar.sticky-top.navbar-dark.bg-info {
   font-family: 'NoirPro-SemiBold';
   font-size: 17px;
   transition: 0.5s;
+  margin-left: 5%;
 }
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus {
@@ -236,6 +242,7 @@ a.logo-text:hover {
     width: 19%;
     margin-top: -1%;
     margin-left: -1%;
+    display: none;
   }
   /* .logo a {
     display: none;
@@ -249,12 +256,11 @@ a.logo-text:hover {
     font-size: 18px;
     transition: 0.5s;
     margin-left: -5%;
+    display: none;
   }
   .logo.animated {
     width: 39%;
     width: 113%;
-  }
-  .logo {
   }
 }
 </style>

@@ -171,8 +171,13 @@ export default {
   margin-top: 5%;
 }
 @media (max-width: 768px) {
-    .parallax-container {
-        display:none;
-    }
+  .parallax-container {
+    display: none;
+  }
+}
+.head_logo {
+  width: 7% !important;
+  margin-top: 3%;
+  margin-left: 5%;
 }
 </style>
