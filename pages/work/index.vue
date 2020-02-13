@@ -274,6 +274,9 @@ li {
   line-height: 1.5;
   font-size: 25px;
 }
+.portfolio-item {
+  padding: 0px;
+}
 @media (max-width: 768px) {
   a.portfolio-link img {
     width: 100%;

@@ -12,8 +12,13 @@
               alt
             />
           </transition>
+          <img src="" alt="" />
           <transition name="logo-text" enter-active-class>
-            <nuxt-link style="animation-duration: 0.3s" class="logo-text" to="/">
+            <nuxt-link
+              style="animation-duration: 0.3s"
+              class="logo-text"
+              to="/"
+            >
               <svg
                 id="demo"
                 xmlns="http://www.w3.org/2000/svg"
@@ -21,8 +26,6 @@
                 width="2000"
                 height="800"
               >
-                <!-- <rect id="background" x="0" y="0" width="200" height="60" fill="#262626" /> -->
-
                 <text
                   id="theText"
                   transform="translate(100 50)"
@@ -35,7 +38,9 @@
                   stroke-width="0.55"
                   stroke-miterlimit
                   stroke-linejoin="miter"
-                >JS Development</text>
+                >
+                  JS Development
+                </text>
               </svg>
             </nuxt-link>
           </transition>
@@ -48,7 +53,9 @@
           <b-nav-item router-tag="a" to="/services">Services</b-nav-item>
           <b-nav-item to="/work" router-tag="a">Work</b-nav-item>
           <!-- <b-nav-item><nuxt-link to="/experiments">Experiments</nuxt-link></b-nav-item> -->
-          <b-nav-item router-tag="a" to="/testimonials">Testimonials</b-nav-item>
+          <b-nav-item router-tag="a" to="/testimonials"
+            >Testimonials</b-nav-item
+          >
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -106,7 +113,7 @@ export default {
   }
 }
 </script>
-<style >
+<style>
 .navbar-dark .navbar-toggler {
   color: #fff;
   border-color: #fff;

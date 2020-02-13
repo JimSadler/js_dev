@@ -148,7 +148,7 @@ nav {
 }
 #nav1 #nav-collapse {
   background-color: rgba(39, 43, 49, 0.9);
-  height: 150px;
+  /* height: 150px; */
 }
 nav a {
   margin-right: 1rem;
