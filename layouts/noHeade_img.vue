@@ -18,31 +18,7 @@
               class="logo-text"
               to="/"
             >
-              <svg
-                id="demo"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 200 80"
-                width="2000"
-                height="800"
-              >
-                <!-- <rect id="background" x="0" y="0" width="200" height="60" fill="#262626" /> -->
-
-                <text
-                  id="theText"
-                  transform="translate(100 50)"
-                  stroke-dasharray="100"
-                  stroke-dashoffset="100"
-                  text-anchor="middle"
-                  font-size="18"
-                  fill="transparent"
-                  stroke="#fff"
-                  stroke-width="0.55"
-                  stroke-miterlimit
-                  stroke-linejoin="miter"
-                >
-                  JS Development
-                </text>
-              </svg>
+              JS Development
             </nuxt-link>
           </transition>
         </div>
@@ -209,7 +185,7 @@ nav.navbar.sticky-top.navbar-dark.bg-info {
 }
 
 .logo.animated {
-  margin-top: 0%;
+  margin-top: 10%;
 }
 .header-container {
   height: 60px;
