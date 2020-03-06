@@ -35,13 +35,19 @@
 
               <div class="CTA-logo0">
                 <div class="cta_button0 animated lightSpeedIn">
-                  <a href="#contact" class="btn btn-sm animated-button victoria-three hero">
+                  <a
+                    href="mailto:jim@jsdevelopment.tech"
+                    class="btn btn-sm animated-button victoria-three hero"
+                  >
                     <!-- <img alt="Click to send an email and get started" id="logoCta1" src="~assets/img/icons/jslogo-white.png"> -->
                     Get Started
                   </a>
                 </div>
               </div>
-              <div class="page-scroll down_arrow_head" data-scrollreveal="enter bottom after .6s">
+              <div
+                class="page-scroll down_arrow_head"
+                data-scrollreveal="enter bottom after .6s"
+              >
                 <a
                   href="#about"
                   aria-label="scroll down to next section"
@@ -64,10 +70,17 @@
               <h2>About Me</h2>
               <hr class="primary" />
               <p>
-                I am a passionate Front End Developer skilled in languages including: HTML, CSS, Javascript. I am also proficient in Bootstrap, jQuery and Vue.js frameworks. I am also a Certified Professional in Web Accessibility,
-                which means that your website will be built wih incluson of everyone in mind.
+                I am a passionate Front End Developer skilled in languages
+                including: HTML, CSS, Javascript. I am also proficient in
+                Bootstrap, jQuery and Vue.js frameworks. I am also a Certified
+                Professional in Web Accessibility, which means that your website
+                will be built wih incluson of everyone in mind.
               </p>
-              <p>I am a born problem solver, which fuels my passion about web development. With a natural eye for design and color, I can elevate your project to cutting-edge quality.</p>
+              <p>
+                I am a born problem solver, which fuels my passion about web
+                development. With a natural eye for design and color, I can
+                elevate your project to cutting-edge quality.
+              </p>
             </div>
             <div class="col-lg-5 col-lg-offset-1 col-md-6">
               <!--<hr class="primary">-->
@@ -157,7 +170,7 @@ export default {
 }
 </script>
 
-<style >
+<style>
 .page-enter-active,
 .page-leave-active {
   transition: all 0.3s ease-out;
