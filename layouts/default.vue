@@ -19,29 +19,7 @@
               class="logo-text"
               to="/"
             >
-              <svg
-                id="demo"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 200 80"
-                width="2000"
-                height="800"
-              >
-                <text
-                  id="theText"
-                  transform="translate(100 50)"
-                  stroke-dasharray="100"
-                  stroke-dashoffset="100"
-                  text-anchor="middle"
-                  font-size="18"
-                  fill="transparent"
-                  stroke="#fff"
-                  stroke-width="0.55"
-                  stroke-miterlimit
-                  stroke-linejoin="miter"
-                >
-                  JS Development
-                </text>
-              </svg>
+              JS Development
             </nuxt-link>
           </transition>
         </div>
@@ -89,15 +67,9 @@ export default {
     }
   },
   mounted() {
-    var tl = new TimelineMax({
-      repeat: 0,
-      repeatDelay: -1
-    })
-    tl.to('#theText', 3, { strokeDashoffset: 0 })
-
     this.$nextTick(function() {
       window.addEventListener('scroll', function() {
-        var navbar = document.getElementById('nav1')
+        var navbar = document.getElementById('nav0')
         var nav_classes = navbar.classList
         if (document.documentElement.scrollTop >= 750) {
           if (nav_classes.contains('shrink') === false) {
