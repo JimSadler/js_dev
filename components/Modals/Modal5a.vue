@@ -76,7 +76,7 @@
                 <strong>Services:</strong> Web Design, Development, animation
                 design, implementation of 360 player/viewer
               </li>
-              <li><strong>Date:</strong> May 2016</li>
+              <li><strong>Date:</strong> May 2017</li>
             </ul>
           </b-col>
         </b-row>
