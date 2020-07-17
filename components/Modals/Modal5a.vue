@@ -76,7 +76,7 @@
                 <strong>Services:</strong> Web Design, Development, animation
                 design, implementation of 360 player/viewer
               </li>
-              <li><strong>Date:</strong> May 2027</li>
+              <li><strong>Date:</strong> May 2019</li>
             </ul>
           </b-col>
         </b-row>
