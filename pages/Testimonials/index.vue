@@ -20,6 +20,7 @@
               alt
               src="~assets/img/icons/m-logo-circle-fill-about1.png"
             />
+            <h5>Martha Novak, LLC</h5>
             <p>
               What a find Jim Sadler is! Jim did the best website for me that I have ever had: beautiful, easy to negotiate, sophisticated, and available to all platforms. Jim has
               the intuition to understand exactly what I need and his technical skills are masterful as he works to bring forth our vision. I continue my relationship with Jim
@@ -38,12 +39,35 @@
         </div>
       </div>
     </section>
+     <hr class="test_sec-div" />
+    <section class="text-center testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <img class="testLogo1 animated flip spin" alt src="~assets/img/client_icons/noun_golden-spiral_43318_ffffff.png">
+            <h5>Benevolent Healing</h5>
+            <p>
+              I am honored to have had Jim Sadler build my very first website, ever.  At first, I wasn’t sure what I even wanted, but Jim was not daunted by dealing with a novice.
+              In fact, he was extremely patient, intuitive, and very knowledgeable.  He made the whole experience a supportive and positive one. By listening to me, sharing his
+              insights and creativity, suggesting options and possibilities, Jim transformed my basic vision and message into a streamlined, effective, cutting-edge product.
+              My website is well designed, informative, dynamic, and easy to navigate. </p>
+            <p>Jim also brought to the table the immeasurable benefit of his considerable experience in making websites accessible to users who are blind, legally blind or who have 
+                other disabilities.  Thanks to him, my website is fully accessible to all. </p>
+            <p>Always learning more and adding to his skill set, Jim continues to bring in new changes and innovations.  I can rely on him for ongoing updates and improvements, and 
+              my website just keeps getting better and better. I recommend Jim Sadler wholeheartedly!</p>
+                  
+            <p>Betty Smith</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <hr class="test_sec-div" />
     <section class="text-center testimonial">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <img class="testLogo2 animated flip spin" alt src="~assets/img/icons/dronep7-fa.png" />
+            <h5>Drones iVue</h5>
             <p>
               Jim Sadler of JS Development is a website wizard. Everything I asked for was delivered in a timely fashion, while also exceeding my expectations! My website
               is easy to navigate, aesthetically pleasing, and professional all at the same time! What more could you ask for? Jim truly brought my website to life!
@@ -56,7 +80,15 @@
   </div>
 </template>
 <script>
-export default {}
+export default {
+  head() {
+      return {
+        title: "JS Development | Testimonials"
+        
+      }
+    }
+
+}
 </script>
 
 <style scoped>
@@ -71,6 +103,11 @@ export default {}
 .testLogo0 {
   width: 6%;
   margin-bottom: 1em;
+}
+.testLogo1 {
+  width: 8%;
+  margin-bottom: 1em;
+  filter: greyscale(60%);
 }
 .testimon.container-fluid {
   /* margin: -60px 0 60px; */

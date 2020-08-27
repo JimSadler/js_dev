@@ -148,6 +148,12 @@ import Logo from '~/components/Logo.vue'
 import CTA1 from '~/components/CTA/CTA1.vue'
 import Parallax from 'vue-parallaxy'
 export default {
+  head() {
+      return {
+        title: 'JS Development | Home'
+      }
+    },
+
   components: {
     Logo,
     CTA1,
