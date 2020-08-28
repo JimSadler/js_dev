@@ -152,6 +152,7 @@
   </section>
 </template>
 <script>
+
 import modal1a from '~/components/Modals/Modal1a.vue'
 import modal2a from '~/components/Modals/Modal2a.vue'
 import modal3a from '~/components/Modals/Modal3a.vue'
@@ -160,6 +161,12 @@ import modal5a from '~/components/Modals/Modal5a.vue'
 import modal6a from '~/components/Modals/Modal6a.vue'
 import modal7a from '~/components/Modals/Modal7a.vue'
 export default {
+  head() {
+      return {
+        title: "JS Development | Work"
+        
+      }
+  },
   layout: 'noHeade_img',
   transition: 'tweakOpacity',
   components: {

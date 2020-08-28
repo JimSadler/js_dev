@@ -97,6 +97,12 @@
 <script>
 import CTA2 from '~/components/CTA/CTA2.vue'
 export default {
+  head() {
+    return {
+      title: "JS Development | Services"
+      
+    }
+  },
   layout: 'noHeade_img',
   transition: 'tweakOpacity',
   components: {
