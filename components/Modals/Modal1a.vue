@@ -19,18 +19,30 @@
                 >
                     <b-carousel-slide 
                         img-alt 
-                        img-src="~assets/img/portfolio/JSM/JSM_3.png" 
+                        img-src="~assets/img/portfolio/JSM/JSM_4.png" 
                         width="620" 
                         height="400"
                     ></b-carousel-slide>
                     <b-carousel-slide
-                        img-src="~assets/img/portfolio/JSM/JSM_2.png"
+                        img-src="~assets/img/portfolio/JSM/JSM_5.png"
                         img-alt
                         width="620"
                         height="400"
                     ></b-carousel-slide>
                     <b-carousel-slide
-                        img-src="~assets/img/portfolio/JSM/JSM_1.png"
+                        img-src="~assets/img/portfolio/JSM/JSM_6.png"
+                        img-alt
+                        width="620"
+                        height="400"
+                    ></b-carousel-slide>
+                    <b-carousel-slide
+                        img-src="~assets/img/portfolio/JSM/JSM_7.png"
+                        img-alt
+                        width="620"
+                        height="400"
+                    ></b-carousel-slide>
+                    <b-carousel-slide
+                        img-src="~assets/img/portfolio/JSM/JSM_8.png"
                         img-alt
                         width="620"
                         height="400"
@@ -42,10 +54,11 @@
           <b-col cols="10" class="modal_Descrip">
             <h3>Project Description:</h3>
             <p>
-              This was a project built with Bootstrap. As single page template, this site has many bells and whisles complete with multiple animations including: scroll, rotation.
-              and fade in
+              Redeveloped this site to a JAMstack tech stack. By using Prismic, the client can change the copy of the site easily. This site is also hosted on Netlify, which makes updating the site as
+              simple as a git commit and push. This was a project built with Gatsby.js. The website features many animations, and has lightning fast load times. There is a darkmode feature that taps
+               into the system preferences of the user, and there is a toggle switch to change the mode manually as well.
             </p>
-            <p>Logo Design was developed from a picture that the client provided of a custom built guitar.</p>
+            <p>Favicon Design was developed from a picture that the client provided of a custom built guitar.</p>
           </b-col>
           
           <b-col cols="10" class="modal_Details">
@@ -56,10 +69,14 @@
                 <a href="https://www.jimsadlermusic.com">Jim Sadler Music</a>
               </li>
               <li>
+                <strong>Tech Stack: </strong> Prismic, Bootstrap, Gatsby.js, Netlify
+
+              </li>
+              <li>
                 <strong>Services:</strong> Web Design, Development, Logo Design.
               </li>
               <li>
-                <strong>Date:</strong> January 2014
+                <strong>Date:</strong> May 2020
               </li>
             </ul>
           </b-col>

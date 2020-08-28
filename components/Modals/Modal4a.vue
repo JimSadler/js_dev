@@ -76,6 +76,10 @@
                 <a href="https://dvt.cloud">DataVault</a>
               </li>
               <li>
+                <strong>Tech Stack: </strong> HTML, CSS, JS, PHP
+                </li>
+              <li>
+              <li>
                 <strong>Services:</strong> Website Development, Animations,
                 Making site CMS ready
               </li>

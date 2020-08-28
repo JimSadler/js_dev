@@ -42,7 +42,7 @@
                 <h3>Project Description:</h3>
                 <p>
                 This site was a complete design and development of the website. One page website
-                with multiple animations, and completely responsive.
+                with multiple animations, and completely responsive. Custom made logo.
                 </p>
             </b-col>
             
@@ -53,6 +53,9 @@
                     <strong>Client:</strong>
                     <a href="https://benevolenthealing.org">Benevolent Healing</a>
                 </li>
+                <li>
+                  <strong>Tech Stack: </strong> Vue.js, Bootstrap, Netlify
+                  </li>
                 <li>
                     <strong>Services:</strong> Website Development, Animations, Making site CMS ready, and responsive for mobile platforms.
                 </li>

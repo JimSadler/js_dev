@@ -73,6 +73,10 @@
                 <a>Angry Apples</a>
               </li>
               <li>
+                <strong>Tech Stack: </strong> HTML, CSS, JS, PHP
+                </li>
+              <li>
+              <li>
                 <strong>Services:</strong> Web Design, Development, animation
                 design, implementation of 360 player/viewer
               </li>
