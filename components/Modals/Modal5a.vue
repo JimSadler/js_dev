@@ -73,7 +73,7 @@
                 <a>Angry Apples</a>
               </li>
               <li>
-                <strong>Tech Stack: </strong> HTML, CSS, JS, PHP
+                <strong>Tech Stack: </strong> HTML, CSS, JS, PHP, Bootstrap
                 </li>
               <li>
               <li>

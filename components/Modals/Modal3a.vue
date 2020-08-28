@@ -43,7 +43,7 @@
                 <a href="https://www.jimsadlermusic.com">Drones iVue</a>
               </li>
               <li>
-                <strong>Tech Stack: </strong> Bootstrap, HTML, CSS, Javascript
+                <strong>Tech Stack: </strong> HTML, CSS, Javascript, Bootstrap
                 </li>
               <li>
                 <strong>Services:</strong> Web Design, Development, animation design, implementation of 360 player/viewer

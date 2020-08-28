@@ -53,6 +53,10 @@
                     <a href="https://aeyesolar.audioeye.com">AudioEye</a>
                 </li>
                 <li>
+                <strong>Tech Stack: </strong>HTML, CSS, JS, Bootstrap, PHP
+                </li>
+              <li>
+                <li>
                     <strong>Services:</strong> Website Development, Login Functionality, mock payment system, custom radio buttons and custom dropdown menus. Using the query string ?disableae=1, will show the inaccessble version of the site.
                 </li>
                 <li>
