@@ -29,7 +29,7 @@
           <a class="portfolio-link" role="button" v-b-modal.modal-scrollable2>
             <div class="caption">
               <div class="caption-content">
-                <h3>Martha Burgess Novak</h3>
+                <h3>Martha Novak</h3>
                 <p>Web Design/Development</p>
               </div>
             </div>
