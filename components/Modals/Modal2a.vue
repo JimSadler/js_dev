@@ -17,35 +17,76 @@
               @sliding-start="onSlideStart"
               @sliding-end="onSlideEnd"
             >
-              <b-carousel-slide 
-                img-src="~assets/img/portfolio/Martha/MN_3.png" 
-                img-alt 
-                width="620" 
-                height="400"
-              ></b-carousel-slide>   
               <b-carousel-slide
-                img-src="~assets/img/portfolio/Martha/MN_2.png"
+                img-src="~assets/img/portfolio/Martha/MN_4.png"
                 img-alt
                 width="620"
                 height="400"
               ></b-carousel-slide>
               <b-carousel-slide
-                img-src="~assets/img/portfolio/Martha/MN_1.png"
+                img-src="~assets/img/portfolio/Martha/MN_5.png"
                 img-alt
                 width="620"
                 height="400"
               ></b-carousel-slide>
-             
+              <b-carousel-slide
+                img-src="~assets/img/portfolio/Martha/MN_6.png"
+                img-alt
+                width="620"
+                height="400"
+              ></b-carousel-slide>
+              <b-carousel-slide
+                img-src="~assets/img/portfolio/Martha/MN_7.png"
+                img-alt
+                width="620"
+                height="400"
+              ></b-carousel-slide>
+              <b-carousel-slide
+                img-src="~assets/img/portfolio/Martha/MN_8.png"
+                img-alt
+                width="620"
+                height="400"
+              ></b-carousel-slide>
+              <b-carousel-slide
+                img-src="~assets/img/portfolio/Martha/MN_9.png"
+                img-alt
+                width="620"
+                height="400"
+              ></b-carousel-slide>
+              <b-carousel-slide
+                img-src="~assets/img/portfolio/Martha/MN_10.png"
+                img-alt
+                width="620"
+                height="400"
+              ></b-carousel-slide>
+              <b-carousel-slide
+                img-src="~assets/img/portfolio/Martha/MN_11.png"
+                img-alt
+                width="620"
+                height="400"
+              ></b-carousel-slide>
+              <b-carousel-slide
+                img-src="~assets/img/portfolio/Martha/MN_12.png"
+                img-alt
+                width="620"
+                height="400"
+              ></b-carousel-slide>
+              <b-carousel-slide
+                img-src="~assets/img/portfolio/Martha/MN_13.png"
+                img-alt
+                width="620"
+                height="400"
+              ></b-carousel-slide>
             </b-carousel>
           </b-col>
           <b-col cols="10" class="modal_Descrip">
             <h3>Project Description:</h3>
             <p>
               This site was a complete re-design of the website. Full multiple page website with multiple animations. the site includes: Paypal integration, Blogtalk Radio integration,
-              and a Wordpress blog.
+              and custom blog built with Netlify CMS. This site also includes a web app using API call to JSOn object, which was built on the client's book the Teacup Prophecies.
             </p>
-            
-            
+
+
           </b-col>
           <b-col cols="10" class="modal_Details">
             <h3>Project Details:</h3>
@@ -54,6 +95,10 @@
                 <strong>Client:</strong>
                 <a href="https://marthanovak.com">Martha Novak</a>
               </li>
+              <li>
+                <strong>Tech Stack: </strong> HTML, CSS, Javascript, Vue.js, Bulma, Animate CSS, Netlify CMS, Netlify
+                </li>
+              <li>
               <li>
                 <strong>Services:</strong> Website Re-design, Logo Design, Website Development, paypal integration, Google Inalytics Implementation
               </li>

@@ -34,7 +34,7 @@
               </div>
             </div>
             <img
-              src="~assets/img/portfolio/BurgessProcessLink.jpg"
+              src="~assets/img/portfolio/Martha/MN_4Link.png"
               class="img-centered"
               alt=""
             />
@@ -116,7 +116,7 @@
           </a>
         </b-col>
 
-        <!--                       
+        <!--
                         <b-col class="col-sm-4 portfolio-item design">
                             <a href="./port_pages/excursion.html" target="_blank" class="portfolio-link">
                                 <div class="caption">
@@ -164,7 +164,7 @@ export default {
   head() {
       return {
         title: "JS Development | Work"
-        
+
       }
   },
   layout: 'noHeade_img',
