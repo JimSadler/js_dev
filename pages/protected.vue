@@ -11,7 +11,7 @@
       <div class="links">
         <nuxt-link to="/" class="button--green">
           Home
-        </a>
+
         </nuxt-link>
         <div v-on:click="triggerNetlifyIdentityAction('logout')" class="button--grey">Logout</div>
       </div>

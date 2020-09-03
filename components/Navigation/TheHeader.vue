@@ -3,7 +3,7 @@
 <template>
 <div class="header-container">
 <header class="the-header"  :class="{classA: scrollPosition < 700, classB: scrollPosition > 700}">
-  <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
+  <TheSideNavToggle @toggle="$emit('side-nav-toggle')" />
   <div class="logo animated flipInX" >
     <transition name="logo" >
       <img class="head_logo animated " src="~/assets/img/negative-space-rt copy.png" v-on:load="onLoaded" v-show="loaded" alt="">
@@ -40,7 +40,7 @@ data: function() {
       show: false,
       scrollPosition: null
     }
-    
+
   },
   methods: {
     onLoaded() {
@@ -52,7 +52,7 @@ data: function() {
     updateScroll() {
       this.scrollPosition = window.scrollY
     }
-    
+
   },
   mounted() {
     window.addEventListener('scroll', this.updateScroll);

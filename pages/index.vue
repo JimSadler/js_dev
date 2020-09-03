@@ -22,7 +22,7 @@
                         background="transparent"
                         img-width="1024"
                         img-height="120"
-                        
+
                         style="text-shadow: 1px 1px 2px #333;"
                         @sliding-start="onSlideStart"
                         @sliding-end="onSlideEnd"
@@ -30,7 +30,7 @@
                     <b-carousel-slide caption="Websites designed with HTML, CSS, JavaScript, including Vue.js and Nuxt" img-blank img-alt="" img-blank-color="transparent"></b-carousel-slide>
                     <b-carousel-slide caption="With advantages of Responsive Design" img-blank img-alt="" img-blank-color="transparent"></b-carousel-slide>
                     <b-carousel-slide caption="Accessibility Built In" img-blank img-alt="" img-blank-color="transparent"></b-carousel-slide>
-                      
+
               </b-carousel>-->
 
               <div class="CTA-logo0">
@@ -395,11 +395,8 @@ p {
   font-family: 'NoirPro_light', Fallback, sans-serif;
   font-size: 17px;
 }
-.spin {
-  /* margin: 20px; */
-  /* width: 100px; */
-  /* height: 100px; */
-  /* background: #f00; */
+/* .spin {
+
   -webkit-animation-name: spin;
   -webkit-animation-duration: 50000ms;
   -webkit-animation-iteration-count: infinite;
@@ -413,7 +410,7 @@ p {
   -ms-animation-iteration-count: infinite;
   -ms-animation-timing-function: linear;
   -o-transition: rotateY(3600deg);
-}
+} */
 @-moz-keyframes spin {
   from {
     -moz-transform: rotateY(0deg);
