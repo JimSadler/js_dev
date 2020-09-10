@@ -1,6 +1,6 @@
 # jsDevVue
 
-> My luminous Nuxt.js project
+
 
 ## Build Setup
 
