@@ -1,6 +1,5 @@
 # http and https need separate rules if you don't force_ssl!
-http://jsdevelopment.tech https://jsdevelopment.io/ 301!
-https://jsdevelopment.tech https://jsdevelopment.io301!
 
-http://www.jsdevelopment.tech https://www.jsdevelopment.io301!
+https://jsdevelopment.tech https://jsdevelopment.io 301!
+
 https://www.jsdevelopment.tech https://www.jsdevelopment.io 301!
