@@ -1,7 +1,0 @@
-[[redirects]]
-  from = "jsdevelopment.tech"
-  to = "jsdevelopment.io"
-  status = 301
-  force = true
-  query = {path = ":path"}
-  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
