@@ -30,9 +30,9 @@
         <b-navbar-nav class="ml-auto">
           <b-nav-item router-tag="a" to="/services">Services</b-nav-item>
           <b-nav-item to="/work" router-tag="a">Work</b-nav-item>
-          <b-nav-item
+          <!-- <b-nav-item
             ><nuxt-link to="/projects">Projects</nuxt-link></b-nav-item
-          >
+          > -->
           <b-nav-item router-tag="a" to="/testimonials"
             >Testimonials</b-nav-item
           >
