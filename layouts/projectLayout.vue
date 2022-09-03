@@ -1,6 +1,6 @@
 <template>
   <b-container fluid class="default_layout">
-    <b-navbar toggleable="lg" type="dark" variant="info" sticky id="nav0">
+    <b-navbar toggleable="lg" type="dark" variant="info" sticky id="nav1">
       <b-navbar-brand>
         <div class="logo animated flipInX">
           <transition name="logo">
@@ -12,7 +12,6 @@
               alt
             />
           </transition>
-          <img src="" alt="" />
           <transition name="logo-text" enter-active-class>
             <nuxt-link
               style="animation-duration: 0.3s"
@@ -30,9 +29,9 @@
         <b-navbar-nav class="ml-auto">
           <b-nav-item router-tag="a" to="/services">Services</b-nav-item>
           <b-nav-item to="/work" router-tag="a">Work</b-nav-item>
-          <b-nav-item
-            ><nuxt-link to="/projects">Projects</nuxt-link></b-nav-item
-          >
+          <b-nav-item>
+            <nuxt-link to="/projects">Projects</nuxt-link>
+          </b-nav-item>
           <b-nav-item router-tag="a" to="/testimonials"
             >Testimonials</b-nav-item
           >
@@ -40,7 +39,6 @@
       </b-collapse>
     </b-navbar>
     <nuxt />
-    <TheFooter />
   </b-container>
 </template>
 <script>
@@ -69,9 +67,15 @@ export default {
     }
   },
   mounted() {
+    var tl = new TimelineMax({
+      repeat: 0,
+      repeatDelay: -1
+    })
+    tl.to('#theText', 3, { strokeDashoffset: 0 })
+
     this.$nextTick(function() {
       window.addEventListener('scroll', function() {
-        var navbar = document.getElementById('nav0')
+        var navbar = document.getElementById('nav1')
         var nav_classes = navbar.classList
         if (document.documentElement.scrollTop >= 750) {
           if (nav_classes.contains('shrink') === false) {
@@ -88,6 +92,17 @@ export default {
 }
 </script>
 <style>
+text#theText {
+  font-size: 16px;
+  margin-top: -3%;
+  margin-left: 10%;
+}
+#demo {
+  width: 30%;
+  height: 10%;
+  margin-left: 2%;
+  margin-top: 0.5%;
+}
 .navbar-dark .navbar-toggler {
   color: #fff;
   border-color: #fff;
@@ -96,23 +111,27 @@ export default {
   padding: 0;
   margin: 0;
 }
-#nav0 {
-  background-color: transparent !important;
+#nav1.bg-info {
+  background-color: #272b31 !important;
 }
 nav {
   padding: 1rem;
   transition: all 0.5s;
   background: white;
 }
-#nav0.shrink {
+#nav1.shrink {
   padding: 0.3rem;
   background: #272b31 !important;
+}
+#nav1 #nav-collapse {
+  background-color: rgba(39, 43, 49, 0.9);
+  /* height: 150px; */
 }
 nav a {
   margin-right: 1rem;
   color: #fff;
   text-decoration: none;
-  background-color: transparent;
+
   transition: 0.7s;
 }
 nav a:hover {
@@ -167,7 +186,7 @@ nav.navbar.sticky-top.navbar-dark.bg-info {
 }
 
 .logo.animated {
-  margin-top: 12%;
+  margin-top: 10%;
 }
 .header-container {
   height: 60px;
@@ -178,6 +197,7 @@ nav.navbar.sticky-top.navbar-dark.bg-info {
   font-family: 'NoirPro-SemiBold';
   font-size: 17px;
   transition: 0.5s;
+  margin-left: 5%;
 }
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus {
@@ -199,6 +219,7 @@ a.logo-text:hover {
     width: 19%;
     margin-top: -1%;
     margin-left: -1%;
+    display: none;
   }
   /* .logo a {
     display: none;
@@ -212,9 +233,9 @@ a.logo-text:hover {
     font-size: 18px;
     transition: 0.5s;
     margin-left: -5%;
+    display: none;
   }
   .logo.animated {
-    margin-top: 2%;
     width: 39%;
     width: 113%;
   }

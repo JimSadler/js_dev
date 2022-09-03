@@ -5,7 +5,8 @@ export default {
    */
   head: {
     title: process.env.npm_package_name || '',
-    meta: [{
+    meta: [
+      {
         charset: 'utf-8'
       },
       {
@@ -19,17 +20,17 @@ export default {
       }
     ],
 
-    link: [{
+    link: [
+      {
         rel: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico',
         class: 'animated spin'
       },
       {
-        rel: "stylesheet",
-        "href": "https://unpkg.com/vue2-animate/dist/vue2-animate.min.css"
+        rel: 'stylesheet',
+        href: 'https://unpkg.com/vue2-animate/dist/vue2-animate.min.css'
       }
-
     ]
   },
   /*
@@ -41,9 +42,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [
-    '~assets/fonts/font.css'
-  ],
+  css: ['~assets/fonts/font.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -59,8 +58,10 @@ export default {
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
     [
-      'nuxt-fontawesome', {
-        imports: [{
+      'nuxt-fontawesome',
+      {
+        imports: [
+          {
             set: '@fortawesome/free-solid-svg-icons',
             icons: ['fas']
           },
@@ -71,7 +72,6 @@ export default {
         ]
       }
     ]
-
   ],
   /*
    ** Build configuration
@@ -81,7 +81,9 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {
-      const vueLoader = config.module.rules.find((loader) => loader.loader === 'vue-loader')
+      const vueLoader = config.module.rules.find(
+        loader => loader.loader === 'vue-loader'
+      )
       vueLoader.options.transformToRequire = {
         video: 'src',
         source: 'src'
