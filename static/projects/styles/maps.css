@@ -1,0 +1,251 @@
+/**
+ * base styles and typography
+ * ---------------
+ */
+
+:root {
+  --blue-050: #f4f5fc;
+  --blue-100: #dfe0f2;
+  --blue-300: #575bb5;
+  --blue-500: #424abf;
+  --blue-700: #28309b;
+  --blue-800: #141a72;
+
+  --red-050: #ffe3e3;
+  --red-100: #ffbdbd;
+  --red-500: #e12d39;
+  --red-600: #cf1124;
+  --red-700: #ab091e;
+}
+html {
+  font-size: 100%;
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.7689em;
+  font-weight: 400;
+}
+
+button {
+  border: 0;
+}
+
+button * {
+  pointer-events: none;
+}
+
+button[class='primary'] {
+  background: #28309b;
+  padding: 0.75em 1em;
+  color: white;
+}
+
+button[class='primary']:hover,
+button[class='primary']:active {
+  background: #424abf;
+}
+
+button[class='secondary'] {
+  cursor: pointer;
+}
+
+button[class='secondary']:hover,
+button[class='secondary']:active {
+  text-decoration: underline;
+}
+
+#map {
+  position: fixed !important;
+  top: 8.5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 20px;
+}
+
+/*******************
+ * Search Panel
+ *******************/
+.search-panel {
+  position: relative;
+  z-index: 1;
+  max-width: 27rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  margin-left: 20px;
+}
+
+.search-panel .header {
+  padding: 2rem;
+  background-color: var(--blue-700);
+  color: white;
+}
+
+.search-panel .header p {
+  margin-top: 0.5rem;
+}
+
+.search-panel__body {
+  background-color: #fff;
+  padding: 1.5em 2em;
+  color: var(--blue-300);
+}
+
+.search-panel__error {
+  color: var(--red-700);
+}
+
+.search-panel__error:empty {
+  display: none;
+}
+
+/*******************
+ * Search Box
+ *******************/
+.search-box {
+  display: grid;
+  grid-template-columns: 1rem 1fr 1.5rem;
+  grid-gap: 0.75rem;
+  align-items: center;
+}
+
+.search-box + .search-box {
+  position: relative;
+  padding: 0.5em 0;
+}
+
+.search-box + .search-box::before {
+  content: '';
+  position: absolute;
+  top: -1.2em;
+  left: 0.35em;
+  width: 0.3em;
+  height: 3em;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--blue-100) 0.1em,
+    var(--blue-100) 0.4em,
+    transparent 0.5em,
+    transparent 0.7em
+  );
+}
+
+.search-box input {
+  width: 100%;
+  border: 0;
+  padding: 0.75em 0em;
+  border-bottom: 2px solid var(--blue-100);
+  color: var(--blue-700);
+}
+
+.search-box input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--blue-300);
+}
+
+.search-box input::placeholder {
+  color: #888;
+}
+
+.search-box__stopover-icon {
+  position: relative;
+  z-index: 1;
+  background-image: url('../images/circle.svg');
+  background-size: cover;
+  width: 1rem;
+  height: 1rem;
+}
+
+.search-box:nth-last-child(2) .search-box__stopover-icon {
+  background-image: url('../images/destination.svg');
+}
+
+.search-box__delete-icon {
+  opacity: 0;
+  width: 100%;
+  padding: 0.25rem;
+}
+
+.search-box:hover .search-box__delete-icon,
+.search-box__delete-icon:focus {
+  opacity: 1;
+}
+
+.search-box__delete-icon:focus {
+  outline: 2px solid var(--red-500);
+  color: var(--red-500);
+}
+
+.search-panel__actions {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0.5rem;
+  align-items: center;
+  margin-left: 1.75em;
+  margin-top: 0.75em;
+}
+
+/*******************
+ # Google's Autocomplete/Typeahead styles
+ *******************/
+.pac-container {
+  position: relative !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 1;
+  width: 100% !important;
+  max-width: 27em !important;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border: 0;
+  border-top: 1px solid var(--blue-100);
+  background-color: white;
+}
+
+.pac-container::after {
+  display: none;
+}
+
+.pac-item {
+  display: flex;
+  align-items: center;
+  padding: 1em 1.5em;
+  border-top: 0;
+  font: inherit;
+  line-height: inherit;
+  color: #888;
+}
+
+.pac-item:hover,
+.pac-item-selected,
+.pac-item-selected:hover {
+  background-color: var(--blue-100);
+}
+
+.pac-icon,
+.hdpi .pac-icon,
+.pac-item-selected .pac-icon,
+.hdpi .pac-item-selected .pac-icon {
+  background-image: url('../images/destination.svg');
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0;
+  margin-right: 0.75em;
+}
+
+.pac-item-query {
+  font: inherit;
+  padding-right: 0.5em;
+  color: var(--blue-700);
+}

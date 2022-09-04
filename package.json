@@ -26,6 +26,7 @@
     "nuxt-fontawesome": "^0.4.0",
     "serialize-javascript": "^3.1.0",
     "vue-carousel": "^0.18.0",
+    "vue-meta": "^2.4.0",
     "vue-mouse-parallax": "^1.1.1",
     "vue-parallaxy": "^1.1.1",
     "vue2-animate": "^2.1.2",

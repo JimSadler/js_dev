@@ -13,11 +13,7 @@
             />
           </transition>
           <transition name="logo-text" enter-active-class>
-            <nuxt-link
-              style="animation-duration: 0.3s"
-              class="logo-text"
-              to="/"
-            >
+            <nuxt-link style="animation-duration: 0.3s" class="logo-text" to="/">
               JS Development
             </nuxt-link>
           </transition>
@@ -29,12 +25,8 @@
         <b-navbar-nav class="ml-auto">
           <b-nav-item router-tag="a" to="/services">Services</b-nav-item>
           <b-nav-item to="/work" router-tag="a">Work</b-nav-item>
-          <b-nav-item>
-            <nuxt-link to="/projects">Projects</nuxt-link>
-          </b-nav-item>
-          <b-nav-item router-tag="a" to="/testimonials"
-            >Testimonials</b-nav-item
-          >
+          <b-nav-item to="/projects">Projects</b-nav-item>
+          <b-nav-item router-tag="a" to="/testimonials">Testimonials</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -42,54 +34,54 @@
   </b-container>
 </template>
 <script>
-import TheFooter from '@/components/Navigation/TheFooter'
-import { TimelineLite, TimelineMax } from 'gsap'
+import TheFooter from "@/components/Navigation/TheFooter";
+import { TimelineLite, TimelineMax } from "gsap";
 export default {
   components: {
-    TheFooter
+    TheFooter,
   },
-  data: function() {
+  data: function () {
     return {
       loaded: false,
       show: false,
-      scrollPosition: null
-    }
+      scrollPosition: null,
+    };
   },
   methods: {
     onLoaded() {
-      this.loaded = true
+      this.loaded = true;
     },
     onFadeIn() {
-      this.show = true
+      this.show = true;
     },
     updateScroll() {
-      this.scrollPosition = window.scrollY
-    }
+      this.scrollPosition = window.scrollY;
+    },
   },
   mounted() {
     var tl = new TimelineMax({
       repeat: 0,
-      repeatDelay: -1
-    })
-    tl.to('#theText', 3, { strokeDashoffset: 0 })
+      repeatDelay: -1,
+    });
+    tl.to("#theText", 3, { strokeDashoffset: 0 });
 
-    this.$nextTick(function() {
-      window.addEventListener('scroll', function() {
-        var navbar = document.getElementById('nav1')
-        var nav_classes = navbar.classList
+    this.$nextTick(function () {
+      window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("nav1");
+        var nav_classes = navbar.classList;
         if (document.documentElement.scrollTop >= 750) {
-          if (nav_classes.contains('shrink') === false) {
-            nav_classes.toggle('shrink')
+          if (nav_classes.contains("shrink") === false) {
+            nav_classes.toggle("shrink");
           }
         } else {
-          if (nav_classes.contains('shrink') === true) {
-            nav_classes.toggle('shrink')
+          if (nav_classes.contains("shrink") === true) {
+            nav_classes.toggle("shrink");
           }
         }
-      })
-    })
-  }
-}
+      });
+    });
+  },
+};
 </script>
 <style>
 text#theText {
@@ -194,7 +186,7 @@ nav.navbar.sticky-top.navbar-dark.bg-info {
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
-  font-family: 'NoirPro-SemiBold';
+  font-family: "NoirPro-SemiBold";
   font-size: 17px;
   transition: 0.5s;
   margin-left: 5%;
@@ -205,7 +197,7 @@ nav.navbar.sticky-top.navbar-dark.bg-info {
 }
 a.logo-text {
   color: #fff;
-  font-family: 'NoirPro-SemiBold', Fallback, sans-serif;
+  font-family: "NoirPro-SemiBold", Fallback, sans-serif;
   font-size: 25px;
   transition: 0.5s;
   margin-left: -10%;
@@ -229,7 +221,7 @@ a.logo-text:hover {
   }
   a.logo-text {
     color: #fff;
-    font-family: 'NoirPro-SemiBold', Fallback, sans-serif;
+    font-family: "NoirPro-SemiBold", Fallback, sans-serif;
     font-size: 18px;
     transition: 0.5s;
     margin-left: -5%;
