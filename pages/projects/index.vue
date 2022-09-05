@@ -11,92 +11,112 @@
         </div>
       </header>
     </div>
-    <section class="text-center testimonial animated fadeIn">
-      <div class="container px-3 d-flex justify-content-between">
-        <div class="mx-1 py-3" style="border: solid 1px black">
-          <img
-            class="testLogo0 animated flip spin"
-            alt
-            src="~assets/img/project_icons/googlemaps.png"
-          />
-          <nuxt-link to="/GoogleMapsClone">
-            <h5>Google Maps Clone</h5>
-          </nuxt-link>
-        </div>
-        <div class="mx-1 py-3" style="border: solid 1px black">
-          <img
-            class="testLogo1 animated flip spin"
-            alt
-            src="~assets/img/project_icons/calculator.png"
-          />
-          <nuxt-link to="/Calculator">
-            <h5>Calculator</h5>
-          </nuxt-link>
-        </div>
-        <div class="mx-1 py-3" style="border: solid 1px black">
-          <img
-            class="testLogo2 animated flip spin"
-            alt
-            src="~assets/img/project_icons/to-do-list-color-icon-vector-28812967.png"
-          />
-          <nuxt-link to="/Todo">
-            <h5>ToDo List</h5>
-          </nuxt-link>
-        </div>
-      </div>
-    </section>
-    <!-- <section class="text-center testimonial animated fadeIn">
-      <div class="container-fluid px-3">
-        <div class="row no-gutters">
-          <div class="col-lg-4 py-5">
-            <div style="border: solid 1px black;">
-              <img
-                class="testLogo0 animated flip spin"
-                alt
-                src="~assets/img/project_icons/googlemaps.png"
-              />
-              <nuxt-link to="/GoogleMapsClone">
-                <h5>Google Maps Clone</h5>
-              </nuxt-link>
+    <div class="container-fluid mt-4">
+      <h2 class="text-center">Pure javascript projects</h2>
+      <hr />
+      <div class="row justify-content-center text-center my-5">
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="100"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img class="testLogo0" alt src="~assets/img/project_icons/googlemaps.png" />
+              <h5 class="card-title">Google Maps Clone</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+              <nuxt-link to="/GoogleMapsClone"> Check It Out </nuxt-link>
             </div>
           </div>
-          <div class="col-lg-4 py-5">
-            <div style="border: solid 1px black;" class="px-3">
-              <img
-                class="testLogo1 animated flip spin"
-                alt
-                src="~assets/img/project_icons/calculator.png"
-              />
-              <nuxt-link to="/GoogleMapsClone">
-                <h5>Calculator</h5>
-              </nuxt-link>
+        </div>
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="300"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img class="testLogo1" alt src="~assets/img/project_icons/calculator.png" />
+              <h5 class="card-title">Calculator</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+
+              <nuxt-link to="/Calculator"> Check it out! </nuxt-link>
             </div>
           </div>
-          <div class="col-lg-4 py-5">
-            <div style="border: solid 1px black;" class="px-3">
+        </div>
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="500"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
               <img
-                class="testLogo2 animated flip spin"
+                class="testLogo2"
                 alt
                 src="~assets/img/project_icons/to-do-list-color-icon-vector-28812967.png"
               />
-              <nuxt-link to="/GoogleMapsClone">
-                <h5>ToDo List</h5>
-              </nuxt-link>
+              <h5 class="card-title">ToDo List</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+
+              <nuxt-link to="/Todo"> ToDo List </nuxt-link>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="700"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img
+                class="testLogo3"
+                alt
+                src="~assets/img/project_icons/calendar-icon-png-favpng-Jrrcc1Wa3nGwtPTF5EAQT2zD4.png"
+              />
+              <h5 class="card-title">Datepicker</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+
+              <nuxt-link to="/Datepicker"> Datepicker </nuxt-link>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </div>
     <hr class="test_sec-div" />
   </div>
 </template>
 <script>
+import aosMixin from "~/mixins/aos";
+
 export default {
   head() {
     return {
       title: "JS Development | Projects",
     };
   },
+  mixins: [aosMixin],
 };
 </script>
 
@@ -106,15 +126,19 @@ export default {
   padding: 30px;
 }
 .testLogo2 {
-  width: 13%;
+  width: 22%;
+  margin-bottom: 1em;
+}
+.testLogo3 {
+  width: 17%;
   margin-bottom: 1em;
 }
 .testLogo0 {
-  width: 7%;
+  width: 10%;
   margin-bottom: 1em;
 }
 .testLogo1 {
-  width: 11%;
+  width: 13%;
   margin-bottom: 1em;
   filter: greyscale(60%);
 }
@@ -152,6 +176,10 @@ hr.light {
 section.text-center.testimonial {
   margin-top: 5%;
   margin-bottom: 5%;
+}
+.maps.animated.fadeIn {
+  -webkit-animation-duration: 1000ms;
+  animation-delay: 1.5s;
 }
 .spin {
   -webkit-animation-name: spin;

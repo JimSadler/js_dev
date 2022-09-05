@@ -30,6 +30,10 @@ export default {
       {
         rel: 'stylesheet',
         href: 'https://unpkg.com/vue2-animate/dist/vue2-animate.min.css'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://unpkg.com/aos@2.3.1/dist/aos.css'
       }
     ]
   },

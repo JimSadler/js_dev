@@ -66,24 +66,24 @@ export default {
   head() {
     return {
       meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
 
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        { hid: "description", name: "description", content: "Meta description" },
+        { hid: 'description', name: 'description', content: 'Meta description' }
       ],
-      title: "JS Development | Google Maps Clone",
+      title: 'JS Development | Google Maps Clone',
       link: [
         {
-          rel: "stylesheet",
-          type: "text/css",
-          href: "https://fonts.googleapis.com/css?family=Roboto:300,400,600,700",
+          rel: 'stylesheet',
+          type: 'text/css',
+          href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,600,700'
         },
         {
-          rel: "stylesheet",
-          type: "text/css",
-          href: "projects/styles/maps.css",
-        },
+          rel: 'stylesheet',
+          type: 'text/css',
+          href: 'projects/styles/maps.css'
+        }
 
         // {
         //   rel: 'stylesheet',
@@ -93,14 +93,14 @@ export default {
       ],
       script: [
         {
-          src: "projects/mapsClone.js",
-          defer: true,
-        },
-      ],
-    };
+          src: 'projects/mapsClone.js',
+          defer: true
+        }
+      ]
+    }
   },
-  layout: "projectLayout",
-};
+  layout: 'projectLayout'
+}
 </script>
 <style scoped>
 /**

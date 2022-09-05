@@ -59,44 +59,43 @@ export default {
   head() {
     return {
       meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
 
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        { hid: 'description', name: 'description', content: 'Meta description' }
+        { hid: "description", name: "description", content: "Meta description" },
       ],
-      title: 'JS Development | ToDo List',
+      title: "JS Development | ToDo List",
       link: [
         {
-          rel: 'stylesheet',
-          type: 'text/css',
-          href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,600,700'
+          rel: "stylesheet",
+          type: "text/css",
+          href: "https://fonts.googleapis.com/css?family=Roboto:300,400,600,700",
         },
         {
-          rel: 'stylesheet',
-          type: 'text/css',
-          href: 'projects/styles/todo.css'
-        }
+          rel: "stylesheet",
+          type: "text/css",
+          href: "projects/styles/todo.css",
+        },
       ],
       script: [
         {
-          src:
-            'https://cdnjs.cloudflare.com/ajax/libs/dompurify/1.0.7/purify.min.js',
-          defer: true
+          src: "https://cdnjs.cloudflare.com/ajax/libs/dompurify/1.0.7/purify.min.js",
+          defer: true,
         },
         {
-          src: 'https://cdn.jsdelivr.net/npm/zl-fetch@latest/dist/index.min.js',
-          defer: true
+          src: "https://cdn.jsdelivr.net/npm/zl-fetch@latest/dist/index.min.js",
+          defer: true,
         },
         {
-          src: 'projects/todo.js',
-          defer: true
-        }
-      ]
-    }
+          src: "projects/todo.js",
+          defer: true,
+        },
+      ],
+    };
   },
-  layout: 'projectLayout'
-}
+  layout: "projectLayout",
+};
 </script>
 <style scoped>
 .todoPage {
@@ -106,7 +105,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url('~~assets/img/black-hole-4mnirpi3le97v1b3.jpg');
+  background-image: url("~~assets/img/jGlq2Q.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
