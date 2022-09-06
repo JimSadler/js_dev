@@ -1,0 +1,103 @@
+:root {
+  --indigo-050: #e0e8f9;
+  --indigo-100: #bed0f7;
+}
+
+/* body {
+  padding: 4em 1em;
+  background-color: var(--indigo-050);
+  font-family: 'Noto Sans', Helvetica, sans-serif;
+  font-size: 125%;
+  line-height: 1.4;
+  font-weight: normal;
+} */
+
+h2 {
+  font-size: 2.352637em;
+}
+
+p + *,
+* + p {
+  margin-top: 1em;
+}
+
+/* Tabby */
+[data-theme='tamagotchi'] {
+  --border-color: hsl(352, 100%, 40%);
+  --text-color: hsl(352, 97%, 23%);
+}
+
+[data-theme='digimon'] {
+  --border-color: hsl(215, 46%, 42%);
+  --text-color: hsl(215, 63%, 23%);
+}
+
+[data-theme='pokemon'] {
+  --border-color: hsl(46, 100%, 52%);
+  --text-color: hsl(43, 26%, 26%);
+}
+
+.tabby {
+  max-width: 45em;
+  margin: auto;
+  margin-top: 15rem;
+}
+
+/* Tabs */
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tab {
+  position: relative;
+  margin-bottom: -0.5em;
+  padding: 1em;
+  background-color: var(--indigo-100);
+  border: 0.5em solid var(--border-color);
+  filter: grayscale(75%) brightness(0.9);
+  color: var(--text-color);
+}
+
+.tab.is-selected {
+  filter: none;
+  background-color: white;
+}
+
+.tab.is-selected::after {
+  position: absolute;
+  z-index: 1;
+  bottom: -0.5em;
+  left: 0;
+  right: 0;
+  display: block;
+  content: '';
+  border-bottom: 0.5em solid white;
+}
+
+/* Tab-content */
+.tab-contents {
+  position: relative;
+}
+
+.tab-content {
+  display: none;
+  padding: 2.5em;
+  border: 0.5em solid var(--border-color);
+  background-color: white;
+}
+
+.tab-content.is-selected {
+  display: block;
+}
+
+.tab-content p {
+  max-width: 30em;
+}
+
+.tab-content img {
+  float: right;
+  width: calc((100% - 1em) / 2);
+  margin-left: 1em;
+  margin-bottom: 1em;
+}

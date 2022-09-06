@@ -102,6 +102,30 @@
             </div>
           </div>
         </div>
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="700"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img
+                class="testLogo3"
+                alt
+                src="~assets/img/project_icons/calendar-icon-png-favpng-Jrrcc1Wa3nGwtPTF5EAQT2zD4.png"
+              />
+              <h5 class="card-title">Tablist</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+
+              <nuxt-link to="/Tablist"> Tablist </nuxt-link>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <hr class="test_sec-div" />
