@@ -470,6 +470,9 @@ p {
   margin-top: 3%;
   margin-left: 5%;
 }
+.top_social {
+  margin-top: -20px;
+}
 .top_social li {
   display: inline-block;
   padding: 1rem;
