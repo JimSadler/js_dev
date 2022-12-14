@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div role="main">
     <section id="about" class="text-center animated fadeIn">
       <div class="container-fluid servHead">
         <div class="row">
           <div class="col-lg-12">
-            <h2>Willing, Able and Passionate</h2>
+            <h1>Willing, Able and Passionate</h1>
             <hr class="primary" />
             <div class="container services">
               <div class="row">
@@ -20,7 +20,7 @@
                         style="width:12%;"
                       />
                     </transition>
-                    <h3>Custom Website</h3>
+                    <h3 role="heading" aria-level="2">Custom Website</h3>
                     <p class="text-muted">
                       Websites designed with HTML, CSS, JavaScript, including Vue.js and Nuxt.
                       We strive to develop a high-level custom website for you that both of us can be proud of.
@@ -40,7 +40,7 @@
                         style="width:11%;"
                       />
                     </transition>
-                    <h3>The Inclusive Design</h3>
+                    <h3 role="heading" aria-level="2">The Inclusive Design</h3>
                     <p class="text-muted">
                       Building a beautiful website is just the icing on the cake. We take pride in building a fully functional website that addresses your brand,
                       and marketing strategies with an inclusive approach that takes all visitors to the site in mind, including those with disabilities.
@@ -59,7 +59,7 @@
                         style="width:20%;"
                       />
                     </transition>
-                    <h3>Responsive Design</h3>
+                    <h3 role="heading" aria-level="2">Responsive Design</h3>
                     <p class="text-muted">
                       We are all living in a mobile world. Which is why JS Development's approach is one of mobile first. In this day and age, the odds of your website
                       being viewed on a mobile device is greater than not.
@@ -78,7 +78,7 @@
                         style="width:20%;"
                       />
                     </transition>
-                    <h3>Other Services</h3>
+                    <h3 role="heading" aria-level="2">Other Services</h3>
                     <p class="text-muted">
                       We can walk you through the whole process of creating a website, set you up with a domain, and hosting account with one of our preferred services,
                       and help with the design of a logo and or animations to help your site come to life.
@@ -100,7 +100,7 @@ export default {
   head() {
     return {
       title: "JS Development | Services"
-      
+
     }
   },
   layout: 'noHeade_img',

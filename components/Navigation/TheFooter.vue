@@ -31,7 +31,7 @@
             </address>
           </div>
           <div class="col-lg-6 social_links">
-            <ul class="list-inline">
+            <ul class="list-inline text-right mr-5">
               <li>
                 <a
                   href="mailto:jim@jsdevelopment.tech"
@@ -94,7 +94,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6">
-            <span class="small">Copyright &copy; 2019 - JS Development</span>
+            <span class="small">Copyright &copy; 2022 - JS Development</span>
           </div>
           <div class="col-md-6 me-tag">
             <a href="https://www.jsdevelopment.tech" target="_blank">
@@ -449,4 +449,5 @@ svg.svg-inline--fa.fa-cog {
     vertical-align: -0.125em;
   }
 }
+
 </style>

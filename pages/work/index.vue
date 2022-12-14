@@ -1,9 +1,9 @@
 <template>
-  <section id="work" class="portfolio-1 animated fadeIn">
+  <section id="work" class="portfolio-1 animated fadeIn" role="main">
     <b-container>
       <b-row class="">
         <b-col cols="12" class="text-center">
-          <h2 class="page-title">The Work</h2>
+          <h1 class="page-title">The Work</h1>
           <hr class="primary" />
         </b-col>
       </b-row>
@@ -14,7 +14,7 @@
           <a class="portfolio-link" role="button" v-b-modal.modal-scrollable1>
             <div class="caption">
               <div class="caption-content">
-                <h3>Jim Sadler Music</h3>
+                <h3 role="heading" aria-level="2">Jim Sadler Music</h3>
                 <p>Web Design/Development</p>
               </div>
             </div>
@@ -29,7 +29,7 @@
           <a class="portfolio-link" role="button" v-b-modal.modal-scrollable2>
             <div class="caption">
               <div class="caption-content">
-                <h3>Martha Novak</h3>
+                <h3 role="heading" aria-level="2">Martha Novak</h3>
                 <p>Web Design/Development</p>
               </div>
             </div>
@@ -44,7 +44,7 @@
           <a class="portfolio-link" role="button" v-b-modal.modal-scrollable3>
             <div class="caption">
               <div class="caption-content">
-                <h3>Drones iVue</h3>
+                <h3 role="heading" aria-level="2">Drones iVue</h3>
                 <p>Web Design/Development</p>
               </div>
             </div>
@@ -59,7 +59,7 @@
           <a class="portfolio-link" role="button" v-b-modal.modal-scrollable4>
             <div class="caption">
               <div class="caption-content">
-                <h3>DataVault</h3>
+                <h3 role="heading" aria-level="2">DataVault</h3>
                 <p>Web Development</p>
               </div>
             </div>
@@ -74,7 +74,7 @@
           <a class="portfolio-link" role="button" v-b-modal.modal-scrollable5>
             <div class="caption">
               <div class="caption-content">
-                <h3>Angry Apples Marketing</h3>
+                <h3 role="heading" aria-level="2">Angry Apples Marketing</h3>
                 <p>Web Development</p>
               </div>
             </div>
@@ -89,7 +89,7 @@
           <a class="portfolio-link" role="button" v-b-modal.modal-scrollable6>
             <div class="caption">
               <div class="caption-content">
-                <h3>Benevolent Healing</h3>
+                <h3 role="heading" aria-level="2">Benevolent Healing</h3>
                 <p>Web Development/Design</p>
               </div>
             </div>
@@ -104,7 +104,7 @@
           <a class="portfolio-link" role="button" v-b-modal.modal-scrollable7>
             <div class="caption">
               <div class="caption-content">
-                <h3>AEYE Solar</h3>
+                <h3 role="heading" aria-level="2">AEYE Solar</h3>
                 <p>Web Development</p>
               </div>
             </div>

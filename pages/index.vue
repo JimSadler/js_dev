@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div role="main">
     <div>
       <div class="home container-fluid">
         <div class="home-content">
@@ -99,35 +99,45 @@
                       Web Developer
                       <br />(CPWA)
                     </p>
-                    <ul class="list-inline">
+                    <ul class="top_social list-inline">
                       <li>
                         <a
-                          class="light-text"
+                          class="btn btn-social-light btn-twitter light-text"
                           href="https://www.facebook.com/JSDevJazz"
                           aria-label="Facebook"
                           target="_blank"
                         >
-                          <i class="fa fa-facebook fa-fw"></i>
+                          <font-awesome-icon
+                            :icon="{ prefix: 'fab', iconName: 'facebook-f' }"
+                            size="lg"
+                          />
                         </a>
                       </li>
                       <li>
                         <a
-                          class="light-text"
+                          class="btn btn-social-light btn-twitter light-text"
                           href="https://www.linkedin.com/in/jim-sadler-1129a927"
                           aria-label="LinkedIn"
                           target="_blank"
                         >
-                          <i class="fa fa-linkedin fa-fw"></i>
+                          <font-awesome-icon
+                            :icon="{ prefix: 'fab', iconName: 'linkedin-in' }"
+                            size="lg"
+                          />
                         </a>
                       </li>
                       <li>
                         <a
-                          class="light-text"
+                          class="btn btn-social-light btn-twitter light-text"
+
                           href="https://twitter.com/JSDevelopmnt"
                           aria-label="Twitter"
                           target="_blank"
                         >
-                          <i class="fa fa-twitter fa-fw"></i>
+                          <font-awesome-icon
+                            :icon="{ prefix: 'fab', iconName: 'twitter' }"
+                            size="lg"
+                          />
                         </a>
                       </li>
                     </ul>
@@ -459,5 +469,31 @@ p {
 .head_logo {
   margin-top: 3%;
   margin-left: 5%;
+}
+.top_social li {
+  display: inline-block;
+  padding: 1rem;
+}
+.top_social li a:hover {
+  border: solid #333 1px;
+  border-radius: 50%;
+
+}
+.top_social li a svg {
+  color: #333 !important;
+
+}
+
+.btn-twitter {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transitino: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 37px;
+  color: #f4f5f7;
 }
 </style>

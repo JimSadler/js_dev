@@ -13,7 +13,7 @@
                             background="transparent"
                             img-width="1024"
                             img-height="120"
-                            
+
                             style="text-shadow: 1px 1px 2px #333;"
                             @sliding-start="onSlideStart"
                             @sliding-end="onSlideEnd"
@@ -21,7 +21,7 @@
                                 <b-carousel-slide caption="Websites designed with HTML, CSS, JavaScript, including Vue.js and Nuxt" img-blank img-alt="" img-blank-color="transparent"></b-carousel-slide>
                                 <b-carousel-slide caption="With advantages of Responsive Design" img-blank img-alt="" img-blank-color="transparent"></b-carousel-slide>
                                 <b-carousel-slide caption="Accessibility Built In" img-blank img-alt="" img-blank-color="transparent"></b-carousel-slide>
-                                
+
                             </b-carousel>
                             <div class="CTA-logo1">
                                 <div class="cta_button1 col-md-3 col-sm-3 col-xs-6 animated lightSpeedIn">
@@ -41,14 +41,14 @@
 <script>
 import Parallax from "vue-parallaxy";
 export default {
-    
+
 name: "CTA2",
 data() {
         return {
-            
+
             slide: 0,
             sliding: null,
-            
+
         }
 },
 
@@ -60,11 +60,24 @@ methods: {
     this.sliding = false
     }
 },
+  mounted() {
+    A11y()
+  },
 components: {
     Parallax
   }
 
 };
+function A11y()  {
+  setTimeout(() => {
+    let carousel_blank_img = document.querySelectorAll('#carousel-1 img')
+    carousel_blank_img.forEach(img => {
+      img.setAttribute('alt', '');
+    })
+    console.log('carousel_blank_img',carousel_blank_img)
+  },100)
+
+}
 </script>
 
 <style scoped>
@@ -75,7 +88,7 @@ components: {
     align-items: center;
     text-align: center;
     color: #fff;
-    
+
 	}
 	.cta_button1 {
     width: 13%;

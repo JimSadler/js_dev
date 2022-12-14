@@ -101,9 +101,22 @@ export default {
       this.sliding = false
     }
   },
+  mounted() {
+    A11y()
+  },
   components: {
     Parallax
   }
+}
+function A11y()  {
+  setTimeout(() => {
+    let carousel_blank_img = document.querySelectorAll('#carousel-1 img')
+    carousel_blank_img.forEach(img => {
+      img.setAttribute('alt', '');
+    })
+    console.log('carousel_blank_img',carousel_blank_img)
+  },100)
+
 }
 </script>
 
