@@ -55,18 +55,18 @@
   --yellow-900: #513c06;
 }
 
-/* html {
+html {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 125%;
   line-height: 1.4;
   font-weight: 400;
   color: var(--blue-grey-900);
-} */
+}
 
-/* body {
-  min-height: 100vh;
-  background: var(--blue-grey-100);
-} */
+/*body {*/
+/*  min-height: 100vh;*/
+/*  background: var(--blue-grey-100);*/
+/*}*/
 
 h1 {
   font-weight: 500;
@@ -74,13 +74,12 @@ h1 {
 
 main {
   max-width: 24.5rem;
-  margin: 1em auto 0 auto;
+  margin: 3em auto 0 auto;
   padding: 2em;
 }
 
 form {
-  margin-top: -0.5em;
-  /* background: rgba(255, 255, 255, 0.5); */
+  margin-top: 1.5em;
 }
 
 .input label {
@@ -115,10 +114,11 @@ input::placeholder {
   --horizontal-padding: 1.5em;
   --border-size: 1px;
   position: absolute;
-  /* margin-top: 1em; */
+  left: 806.11px !important;
+   /*margin-top: 2em;*/
   padding: var(--horizontal-padding);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.5);
+  background: white;
   box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.15), 0 2px 4px hsla(0, 0%, 0%, 0.12);
 }
 
@@ -129,7 +129,7 @@ input::placeholder {
 .datepicker .datepicker__next {
   position: absolute;
   padding: 0;
-  color: black;
+  color: var(--blue-grey-700);
   border: 0;
 }
 
@@ -151,7 +151,7 @@ input::placeholder {
  * Calendar
  *******************/
 .datepicker__year-month {
-  color: black;
+  color: var(--blue-grey-700);
   text-align: center;
   font-weight: 500;
 }
@@ -165,7 +165,7 @@ input::placeholder {
 .datepicker__day-of-week {
   --font-size: 0.7;
   margin-top: calc(1 / var(--font-size) * 1.25em);
-  color: black;
+  color: var(--blue-grey-400);
   font-size: calc(var(--fz) * 1em);
   font-weight: 500;
   font-feature-settings: 'smcp' 1;
@@ -196,7 +196,7 @@ input::placeholder {
   padding: 0;
   border-radius: 50%;
   background-color: transparent;
-  color: black;
+  color: var(--blue-grey-600);
 }
 
 .datepicker__date-grid button[start-date] {
@@ -215,4 +215,11 @@ input::placeholder {
 .datepicker__date-grid button.is-selected {
   background-color: var(--teal-100);
   color: var(--teal-900);
+}
+.datepicker_date-grid button:focus {
+  box-shadow: inset 0 0 0 2px var(--blue-grey-100);
+}
+
+.datepicker_date-grid button.is-selected:focus {
+  box-shadow: inset 0 0 0 2px var(--teal-200);
 }

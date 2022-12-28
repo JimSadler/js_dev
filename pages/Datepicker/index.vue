@@ -47,8 +47,9 @@ export default {
       ],
       script: [
         {
-          src: 'projects/datepicker.js',
-          defer: true
+          src: 'projects/Datepicker/main.js',
+          defer: true,
+          type: 'module'
         }
       ]
     }
@@ -64,7 +65,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url('~~assets/img/IFNZyE.jpg');
+  background-image: url('~assets/img/IFNZyE.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

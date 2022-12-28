@@ -127,6 +127,371 @@
           </div>
         </div>
       </div>
+
+      <div class="row justify-content-center text-center my-5">
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="100"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img class="testLogo0" alt src="~assets/img/project_icons/googlemaps.png" />
+              <h5 class="card-title"> Accordion</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+              <nuxt-link to="/GoogleMapsClone"> Check It Out </nuxt-link>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="300"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img class="testLogo1" alt src="~assets/img/project_icons/calculator.png" />
+              <h5 class="card-title">Off Canvas Menu</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+
+              <nuxt-link to="/Calculator"> Check it out! </nuxt-link>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="500"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img
+                class="testLogo2"
+                alt
+                src="~assets/img/project_icons/to-do-list-color-icon-vector-28812967.png"
+              />
+              <h5 class="card-title">Infinite Scroll</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+
+              <nuxt-link to="/Todo"> ToDo List </nuxt-link>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="700"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img
+                class="testLogo3"
+                alt
+                src="~assets/img/project_icons/calendar-icon-png-favpng-Jrrcc1Wa3nGwtPTF5EAQT2zD4.png"
+              />
+              <h5 class="card-title">Modal</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+
+              <nuxt-link to="/Datepicker"> Datepicker </nuxt-link>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="700"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img
+                class="testLogo3"
+                alt
+                src="~assets/img/project_icons/calendar-icon-png-favpng-Jrrcc1Wa3nGwtPTF5EAQT2zD4.png"
+              />
+              <h5 class="card-title">Tablist</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+
+              <nuxt-link to="/Tablist"> Tablist </nuxt-link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center text-center my-5">
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="100"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img class="testLogo0" alt src="~assets/img/project_icons/googlemaps.png" />
+              <h5 class="card-title">Popover</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+              <nuxt-link to="/GoogleMapsClone"> Check It Out </nuxt-link>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="300"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img class="testLogo1" alt src="~assets/img/project_icons/calculator.png" />
+              <h5 class="card-title">Slide to Reveal</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+
+              <nuxt-link to="/Calculator"> Check it out! </nuxt-link>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="500"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img
+                class="testLogo2"
+                alt
+                src="~assets/img/project_icons/to-do-list-color-icon-vector-28812967.png"
+              />
+              <h5 class="card-title">Spinning Pac-man</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+
+              <nuxt-link to="/Todo"> ToDo List </nuxt-link>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="700"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img
+                class="testLogo3"
+                alt
+                src="~assets/img/project_icons/calendar-icon-png-favpng-Jrrcc1Wa3nGwtPTF5EAQT2zD4.png"
+              />
+              <h5 class="card-title">Datepicker</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+
+              <nuxt-link to="/Datepicker"> Datepicker </nuxt-link>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="700"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img
+                class="testLogo3"
+                alt
+                src="~assets/img/project_icons/calendar-icon-png-favpng-Jrrcc1Wa3nGwtPTF5EAQT2zD4.png"
+              />
+              <h5 class="card-title">Tablist</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+
+              <nuxt-link to="/Tablist"> Tablist </nuxt-link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center text-center my-5">
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="100"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img class="testLogo0" alt src="~assets/img/project_icons/googlemaps.png" />
+              <h5 class="card-title">Sticky Nav</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+              <nuxt-link to="/GoogleMapsClone"> Check It Out </nuxt-link>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="300"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img class="testLogo1" alt src="~assets/img/project_icons/calculator.png" />
+              <h5 class="card-title">Type-Ahead</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+
+              <nuxt-link to="/Calculator"> Check it out! </nuxt-link>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="500"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img
+                class="testLogo2"
+                alt
+                src="~assets/img/project_icons/to-do-list-color-icon-vector-28812967.png"
+              />
+              <h5 class="card-title">Drag and Drop</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+
+              <nuxt-link to="/Todo"> ToDo List </nuxt-link>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="700"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img
+                class="testLogo3"
+                alt
+                src="~assets/img/project_icons/calendar-icon-png-favpng-Jrrcc1Wa3nGwtPTF5EAQT2zD4.png"
+              />
+              <h5 class="card-title">Carousel</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+
+              <nuxt-link to="/Datepicker"> Datepicker </nuxt-link>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="700"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img
+                class="testLogo3"
+                alt
+                src="~assets/img/project_icons/calendar-icon-png-favpng-Jrrcc1Wa3nGwtPTF5EAQT2zD4.png"
+              />
+              <h5 class="card-title">Tiny Framework</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+
+              <nuxt-link to="/Tablist"> Tablist </nuxt-link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center text-center my-5">
+        <div
+          class="col-auto mb-3"
+          data-aos="zoom-in-right"
+          data-aos-delay="100"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img class="testLogo0" alt src="~assets/img/project_icons/googlemaps.png" />
+              <h5 class="card-title">Single Page Application</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </p>
+              <nuxt-link to="/GoogleMapsClone"> Check It Out </nuxt-link>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
     <hr class="test_sec-div" />
   </div>
