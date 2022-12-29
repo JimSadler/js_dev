@@ -1,0 +1,154 @@
+:root {
+  --link-color: #2900b4;
+  --link-color-dark: #190070;
+}
+
+[data-theme='cheese'] {
+  --background-color: #f3ca5f;
+  --text-color: #3a1e0e;
+}
+
+[data-theme='lettuce'] {
+  --background-color: #88d28b;
+  --text-color: #091e0a;
+}
+
+[data-theme='tomato'] {
+  --background-color: #f46e6e;
+  --text-color: #1a0201;
+}
+
+[data-theme='beef'] {
+  --background-color: #ac5a30;
+  --text-color: #170005;
+}
+
+html {
+  font-size: 125%;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.4;
+}
+
+/*body {*/
+/*  background-image: linear-gradient(135deg, #ffc96a, #ffbfdd);*/
+/*  min-height: 100vh;*/
+/*  padding: 3em;*/
+/*}*/
+
+a {
+  color: var(--link-color);
+}
+
+a:hover,
+a:active {
+  color: var(--link-color-dark);
+}
+
+.accordion-container {
+  max-width: 30em;
+}
+
+.accordion {
+  position: relative;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.accordion::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1em;
+  background-color: rgba(125, 89, 69, 0.6);
+  content: '';
+}
+
+.accordion:first-child {
+  border-top-left-radius: 1.5em;
+  border-top-right-radius: 1.5em;
+}
+
+.accordion:first-child::before {
+  border-top-left-radius: 1.5em;
+}
+
+.accordion:last-child {
+  border-bottom-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+}
+
+.accordion:last-child::before {
+  border-bottom-left-radius: 1.5em;
+}
+
+/**
+ * START EDITING HERE
+ * ==================
+ */
+
+.accordion__header button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 1rem);
+  margin-left: 1rem;
+  padding: 1.5rem 2rem 1.5rem;
+  border: 0;
+  text-align: left;
+}
+
+.accordion__title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Indicators */
+.accordion__indicator > * {
+  width: 1rem;
+}
+
+.accordion .indicator__plus {
+  display: block;
+}
+
+.accordion .indicator__minus {
+  display: none;
+}
+
+.accordion.is-open .indicator__minus {
+  display: block;
+}
+
+.accordion.is-open .indicator__plus {
+  display: none;
+}
+
+/* Accordion content */
+.accordion__content {
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: height 0.3s ease-out, visibility 0s 0.3s;
+}
+
+.accordion.is-open .accordion__content {
+  visibility: visible;
+  transition: height 0.3s ease-out, visibility 0s 0s;
+}
+
+.accordion__inner {
+  display: grid;
+  grid-template-columns: 7.5em 1fr;
+  grid-column-gap: 1.5em;
+  align-items: center;
+  padding-right: 3em;
+  padding-bottom: 1.5em;
+  padding-left: 3em;
+}
+
+.accordion__inner svg {
+  width: 10em;
+  max-width: 100%;
+}

@@ -70,7 +70,7 @@ components: {
 };
 function A11y()  {
   setTimeout(() => {
-    let carousel_blank_img = document.querySelectorAll('#carousel-1 img')
+    let carousel_blank_img = document.querySelectorAll('#carousel-1 project_icons')
     carousel_blank_img.forEach(img => {
       img.setAttribute('alt', '');
     })

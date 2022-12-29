@@ -125,7 +125,7 @@
                                         </h3>
                                     </div>
                                 </div>
-                                <img src="~assets/img/portfolio/excursion-thumb.jpg" class="img-centered" alt="">
+                                <project_icons src="~assets/project_icons/portfolio/excursion-thumb.jpg" class="project_icons-centered" alt="">
                             </a>
                         </b-col>
                         <b-col class="col-sm-4 portfolio-item design">
@@ -136,7 +136,7 @@
                                         </h3>
                                     </div>
                                 </div>
-                                <img src="~assets/img/portfolio/Ming.jpg" class="img-centered" alt="">
+                                <project_icons src="~assets/project_icons/portfolio/Ming.jpg" class="project_icons-centered" alt="">
                             </a>
                         </b-col> -->
         <!-- </div> -->

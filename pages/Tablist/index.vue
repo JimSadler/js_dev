@@ -10,7 +10,7 @@
 
 <!--        <div class="tab-contents">-->
 <!--          <section class="tab-content is-selected" data-theme="digimon" id="digimon">-->
-<!--            <img src="projects/images/digimon.png" alt="digimon" />-->
+<!--            <project_icons src="projects/images/digimon.png" alt="digimon" />-->
 <!--            <h2>Digimon</h2>-->
 <!--            <p>-->
 <!--              Digimon, short for "Digital Monsters", is a Japanese media franchise-->
@@ -27,7 +27,7 @@
 <!--          </section>-->
 
 <!--          <section class="tab-content" data-theme="pokemon" id="pokemon">-->
-<!--            <img src="projects/images/pokemon.png" alt="Pokemon" />-->
+<!--            <project_icons src="projects/images/pokemon.png" alt="Pokemon" />-->
 <!--            <h2>Pokémon</h2>-->
 <!--            <p>-->
 <!--              Pokémon also known as Pocket Monsters in Japan, is a media franchise managed-->
@@ -43,7 +43,7 @@
 <!--          </section>-->
 
 <!--          <section class="tab-content" data-theme="tamagotchi" id="tamagotchi">-->
-<!--            <img src="projects/images/tamagotchi.png" alt="Tamagotchi" />-->
+<!--            <project_icons src="projects/images/tamagotchi.png" alt="Tamagotchi" />-->
 <!--            <h2>Tamagotchi</h2>-->
 <!--            <p>-->
 <!--              The Tamagotchi is a handheld digital pet, created in Japan by Akihiro Yokoi-->

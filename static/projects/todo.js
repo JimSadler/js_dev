@@ -43,7 +43,7 @@ function generateUniqueString(length) {
 function makeTaskElement({ id, name, done, state = 'loaded' }) {
   let spinner = ''
   if (state === 'loading') {
-    spinner = '<img class="task__spinner" src="images/spinner.gif" alt=""/>'
+    spinner = '<project_icons class="task__spinner" src="images/spinner.gif" alt=""/>'
   }
 
   let checkbox = ''

@@ -131,7 +131,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url('~~assets/img/ELH_paralx.jpg');
+  background-image: url('~~assets/project_icons/ELH_paralx.jpg');
   background-size: cover;
 } */
 .test_background h1.brand-heading {

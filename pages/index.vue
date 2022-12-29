@@ -20,16 +20,16 @@
                         v-model="slide"
                         :interval="4000"
                         background="transparent"
-                        img-width="1024"
-                        img-height="120"
+                        project_icons-width="1024"
+                        project_icons-height="120"
 
                         style="text-shadow: 1px 1px 2px #333;"
                         @sliding-start="onSlideStart"
                         @sliding-end="onSlideEnd"
                     >
-                    <b-carousel-slide caption="Websites designed with HTML, CSS, JavaScript, including Vue.js and Nuxt" img-blank img-alt="" img-blank-color="transparent"></b-carousel-slide>
-                    <b-carousel-slide caption="With advantages of Responsive Design" img-blank img-alt="" img-blank-color="transparent"></b-carousel-slide>
-                    <b-carousel-slide caption="Accessibility Built In" img-blank img-alt="" img-blank-color="transparent"></b-carousel-slide>
+                    <b-carousel-slide caption="Websites designed with HTML, CSS, JavaScript, including Vue.js and Nuxt" project_icons-blank project_icons-alt="" project_icons-blank-color="transparent"></b-carousel-slide>
+                    <b-carousel-slide caption="With advantages of Responsive Design" project_icons-blank project_icons-alt="" project_icons-blank-color="transparent"></b-carousel-slide>
+                    <b-carousel-slide caption="Accessibility Built In" project_icons-blank project_icons-alt="" project_icons-blank-color="transparent"></b-carousel-slide>
 
               </b-carousel>-->
 
@@ -39,7 +39,7 @@
                     href="mailto:jim@jsdevelopment.tech"
                     class="btn btn-sm animated-button victoria-three hero"
                   >
-                    <!-- <img alt="Click to send an email and get started" id="logoCta1" src="~assets/img/icons/jslogo-white.png"> -->
+                    <!-- <project_icons alt="Click to send an email and get started" id="logoCta1" src="~assets/project_icons/icons/jslogo-white.png"> -->
                     Get Started
                   </a>
                 </div>
@@ -217,7 +217,7 @@ export default {
   margin-top: -10%;
   z-index: 0;
   position: relative;
-  /* background-image: url("~assets/img/716357_high-resolution-space-galaxy-wallpapers-full-size-siwallpaperhd-16144_2560x1600_h.jpg"); */
+  /* background-image: url("~assets/project_icons/716357_high-resolution-space-galaxy-wallpapers-full-size-siwallpaperhd-16144_2560x1600_h.jpg"); */
 }
 .home-content {
   position: absolute;

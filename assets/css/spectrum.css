@@ -920,17 +920,17 @@ a.light-text:focus {
   }
 }
 /*@media (min-width: 767px) {*/
-  /*.about-img-1 {*/
-    /*background-image: url(../img/portraits/portrait-1.jpg);*/
+  /*.about-project_icons-1 {*/
+    /*background-image: url(../project_icons/portraits/portrait-1.jpg);*/
   /*}*/
-  /*.about-img-2 {*/
-    /*background-image: url(../img/portraits/portrait-2.jpg);*/
+  /*.about-project_icons-2 {*/
+    /*background-image: url(../project_icons/portraits/portrait-2.jpg);*/
   /*}*/
-  /*.about-img-3 {*/
-    /*background-image: url(../img/portraits/portrait-3.jpg);*/
+  /*.about-project_icons-3 {*/
+    /*background-image: url(../project_icons/portraits/portrait-3.jpg);*/
   /*}*/
-  /*.about-img-4 {*/
-    /*background-image: url(../img/portraits/portrait-4.jpg);*/
+  /*.about-project_icons-4 {*/
+    /*background-image: url(../project_icons/portraits/portrait-4.jpg);*/
   /*}*/
 /*}*/
 .blog-1 .blog-col {
