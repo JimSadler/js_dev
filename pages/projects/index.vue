@@ -205,7 +205,7 @@ export default {
       {
         name: 'modal',
         icon: '/projects/images/project_icons/modal_icon.png',
-        route: '/',
+        route: '/Modal',
         title: 'Modal',
         description: '',
         icon_size_class: 'testLogo2'
