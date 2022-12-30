@@ -14,6 +14,36 @@
     <div class="container-fluid mt-4">
       <h2 class="text-center">Pure javascript projects</h2>
       <hr />
+
+<!--      testing-->
+<!--      <div class="row loop_test justify-content-center text-center my-5">-->
+<!--        <div-->
+<!--          class="col-auto mb-3"-->
+<!--          data-aos="zoom-in-right"-->
+<!--          data-aos-delay="100"-->
+<!--          data-aos-duration="500"-->
+<!--          data-aos-easing="ease-in-out"-->
+<!--          v-for="row in card_data" :key="row['index']"-->
+<!--        >-->
+<!--          {{row[index].name}}-->
+<!--          <div class="card" style="width: 18rem" >-->
+<!--            <div class="card-body">-->
+<!--&lt;!&ndash;              <img : alt :src="card"/>&ndash;&gt;-->
+
+<!--              <h5 class="card-title">tesgitng</h5>-->
+<!--              <p class="card-text">-->
+<!--                Some quick example text to build on the card title and make up the bulk of-->
+<!--                the card's content.-->
+<!--              </p>-->
+<!--&lt;!&ndash;              <nuxt-link :to="card.route"> Check It Out </nuxt-link>&ndash;&gt;-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--        </div>-->
+<!--      </div>-->
+
+
+
       <div class="row loop_test justify-content-center text-center my-5">
         <div
           class="col-auto mb-3"
@@ -132,6 +162,161 @@ export default {
     };
   },
   data: () => ({
+    card_data: [
+      [
+        {
+          name: 'googleMapsClone',
+          icon: '/projects/images/project_icons/googlemaps.png',
+          route: '/GoogleMapsClone',
+          title: 'Google Maps Clone',
+          description: '',
+          icon_size_class: 'testLogo2'
+        },
+        {
+          name: 'calculator',
+          icon: '/projects/images/project_icons/calculator.png',
+          route: '/Calculator',
+          title: 'Calculator',
+          description: '',
+          icon_size_class: 'testLogo2'
+        },
+        {
+          name: 'todo_list',
+          icon: '/projects/images/project_icons/to-do-list-color-icon-vector-28812967.png',
+          route: '/Todo',
+          title: 'To Do List',
+          description: '',
+          icon_size_class: 'testLogo2'
+        },
+        {
+          name: 'datepicker',
+          icon: '/projects/images/project_icons/datepicker_icon.png',
+          route: '/Datepicker',
+          title: 'Datepicker',
+          description: '',
+          icon_size_class: 'testLogo2'
+        },
+        {
+          name: 'tablist',
+          icon: '/projects/images/project_icons/datepicker_icon.png',
+          route: '/Tablist',
+          title: 'Tablist',
+          description: '',
+          icon_size_class: 'testLogo2'
+        }
+      ],
+      [
+        {
+          name: 'accordion',
+          icon: '/projects/images/project_icons/accordion_icon2.png',
+          route: '/Accordion',
+          title: 'Accordion',
+          description: '',
+          icon_size_class: 'testLogo2'
+        },
+        {
+          name: 'off_canvas',
+          icon: '/projects/images/project_icons/off_canvas_menu_icon.png',
+          route: '/OffCanvasMenu',
+          title: 'Off Canvas Menu',
+          description: '',
+          icon_size_class: 'testLogo2'
+        },
+        // {
+        //   name: 'infinite_scroll',
+        //   icon: '/projects/images/project_icons/infinite.gif',
+        //   route: '/InfiniteScroll',
+        //   title: 'Infinite Scroll',
+        //   description: '',
+        //   icon_size_class: 'testLogo2'
+        // },
+        {
+          name: 'modal',
+          icon: '/projects/images/project_icons/modal_icon.png',
+          route: '/',
+          title: 'Modal',
+          description: '',
+          icon_size_class: 'testLogo2'
+        },
+        {
+          name: 'popover',
+          icon: '/projects/images/project_icons/popover.png',
+          route: '/',
+          title: 'Popover',
+          description: '',
+          icon_size_class: 'testLogo2'
+        }
+      ],
+      [
+        {
+          name: 'slide_to_reveal',
+          icon: '/projects/images/project_icons/slide_icon.gif',
+          route: '/',
+          title: 'Slide to Reveal',
+          description: '',
+          icon_size_class: 'testLogo3'
+        },
+        {
+          name: 'spinning_pacman',
+          icon: '/projects/images/project_icons/pacman.gif',
+          route: '/',
+          title: 'Spinning Pac Man',
+          description: '',
+          icon_size_class: 'testLogo3'
+        },
+        {
+          name: 'sticky_nav',
+          icon: '/projects/images/project_icons/sticky_icon.gif',
+          route: '/',
+          title: 'Sticky Nav',
+          description: '',
+          icon_size_class: 'testLogo3'
+        },
+        {
+          name: 'typeahead',
+          icon: '/projects/images/project_icons/type_ahead.gif',
+          route: '/',
+          title: 'Typeahead',
+          description: '',
+          icon_size_class: 'testLogo3'
+        },
+        {
+          name: 'drag_drop',
+          icon: '/projects/images/project_icons/drag.gif',
+          route: '/',
+          title: 'Drag and Drop',
+          description: '',
+          icon_size_class: 'testLogo3'
+        }
+      ],
+      [
+        {
+          name: 'carousel',
+          icon: '/projects/images/project_icons/carousel_icon.png',
+          route: '/',
+          title: 'Carousel',
+          description: '',
+          icon_size_class: 'testLogo3'
+        },
+        {
+          name: 'tiny_framework',
+          icon: '/projects/images/project_icons/tiny_framework_icon.png',
+          route: '/',
+          title: 'Tiny Framework',
+          description: '',
+          icon_size_class: 'testLogo3'
+        },
+        {
+          name: 'spa',
+          icon: '/projects/images/project_icons/spa_icon.png',
+          route: '/',
+          title: 'Single Page Application',
+          description: '',
+          icon_size_class: 'testLogo3'
+        },
+
+      ],
+    ],
     card_row_1: [
       {
         name: 'googleMapsClone',
@@ -191,14 +376,14 @@ export default {
         description: '',
         icon_size_class: 'testLogo2'
       },
-      {
-        name: 'infinite_scroll',
-        icon: '/projects/images/project_icons/infinite.gif',
-        route: '/',
-        title: 'Infinite Scroll',
-        description: '',
-        icon_size_class: 'testLogo2'
-      },
+      // {
+      //   name: 'infinite_scroll',
+      //   icon: '/projects/images/project_icons/infinite.gif',
+      //   route: '/InfiniteScroll',
+      //   title: 'Infinite Scroll',
+      //   description: '',
+      //   icon_size_class: 'testLogo2'
+      // },
       {
         name: 'modal',
         icon: '/projects/images/project_icons/modal_icon.png',
@@ -214,7 +399,15 @@ export default {
         title: 'Popover',
         description: '',
         icon_size_class: 'testLogo2'
-      }
+      },
+      {
+        name: 'tiny_framework',
+        icon: '/projects/images/project_icons/tiny_framework_icon.png',
+        route: '/',
+        title: 'Tiny Framework',
+        description: '',
+        icon_size_class: 'testLogo3'
+      },
     ],
     card_row_3: [
       {
@@ -267,14 +460,14 @@ export default {
         description: '',
         icon_size_class: 'testLogo3'
       },
-      {
-        name: 'tiny_framework',
-        icon: '/projects/images/project_icons/tiny_framework_icon.png',
-        route: '/',
-        title: 'Tiny Framework',
-        description: '',
-        icon_size_class: 'testLogo3'
-      },
+      // {
+      //   name: 'tiny_framework',
+      //   icon: '/projects/images/project_icons/tiny_framework_icon.png',
+      //   route: '/',
+      //   title: 'Tiny Framework',
+      //   description: '',
+      //   icon_size_class: 'testLogo3'
+      // },
       {
         name: 'spa',
         icon: '/projects/images/project_icons/spa_icon.png',
@@ -285,6 +478,7 @@ export default {
       },
 
     ],
+
 
     disabled: false,
     readonly: false,

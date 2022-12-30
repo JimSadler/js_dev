@@ -35,12 +35,14 @@ h1 {
  */
 .offsite-container {
   position: fixed;
-  top: 0;
+  top: 6rem;
   bottom: 0;
-  left: -14rem;
+  left: -15rem;
   width: 14rem;
   /*background-color: var(--menuBackgroundColor);*/
   transition: transform 0.3s ease-out;
+  border: solid 1px #fff;
+  height: 60%;
 }
 
 .site-container {
@@ -55,23 +57,32 @@ h1 {
  */
 button {
   border: 2px solid currentColor;
-  transition: background-color 0.3s ease-out;
+  /*transition: background-color 0.3s ease-out;*/
 }
 
 button:hover,
 button:focus,
 .offsite-is-open button {
   background-color: var(--textColor);
-  color: var(--backgroundColor);
+  color: var(--backgroundColor) !important;
   border-color: var(--textColor);
 }
+.offsite-is-open button.close-button {
+  height: 60px;
+  width: 60px;
+  background-color: transparent;
+  border-color: var(--backgroundColor) !important;
+  border-radius:50%;
+  margin-left:1rem;
 
+}
 /**
  *  Navigation
  * -----------
  */
 .nav {
   margin-top: 6rem;
+  background-color: transparent;
 }
 
 .nav a {
