@@ -213,7 +213,7 @@ export default {
       {
         name: 'popover',
         icon: '/projects/images/project_icons/popover.png',
-        route: '/',
+        route: '/Popover',
         title: 'Popover',
         description: '',
         icon_size_class: 'testLogo2'
@@ -221,7 +221,7 @@ export default {
       {
         name: 'tiny_framework',
         icon: '/projects/images/project_icons/tiny_framework_icon.png',
-        route: '/',
+        route: '/Tiny',
         title: 'Tiny Framework',
         description: '',
         icon_size_class: 'testLogo2'
@@ -231,7 +231,7 @@ export default {
       {
         name: 'slide_to_reveal',
         icon: '/projects/images/project_icons/slide_icon.gif',
-        route: '/',
+        route: '/SlideReveal',
         title: 'Slide to Reveal',
         description: '',
         icon_size_class: 'testLogo3'

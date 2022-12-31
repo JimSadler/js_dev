@@ -1,0 +1,131 @@
+:root {
+  --pink-vivid-050: #ffe3ec;
+  --pink-vivid-100: #ffb8d2;
+  --pink-vivid-200: #ff8cba;
+  --pink-vivid-300: #f364a2;
+  --pink-vivid-400: #e8368f;
+  --pink-vivid-500: #da127d;
+  --pink-vivid-600: #bc0a6f;
+  --pink-vivid-700: #a30664;
+  --pink-vivid-800: #870557;
+  --pink-vivid-900: #620042;
+
+  --cool-grey-050: #f5f7fa;
+  --cool-grey-100: #e4e7eb;
+  --cool-grey-200: #cbd2d9;
+  --cool-grey-300: #9aa5b1;
+  --cool-grey-400: #7b8794;
+  --cool-grey-500: #616e7c;
+  --cool-grey-600: #52606d;
+  --cool-grey-700: #3e4c59;
+  --cool-grey-800: #323f4b;
+  --cool-grey-900: #1f2933;
+
+  --purple-vivid-050: #f2ebfe;
+  --purple-vivid-100: #dac4ff;
+  --purple-vivid-200: #b990ff;
+  --purple-vivid-300: #a368fc;
+  --purple-vivid-400: #9446ed;
+  --purple-vivid-500: #8719e0;
+  --purple-vivid-600: #7a0ecc;
+  --purple-vivid-700: #690cb0;
+  --purple-vivid-800: #580a94;
+  --purple-vivid-900: #44056e;
+
+  --cyan-vivid-050: #e1fcf8;
+  --cyan-vivid-100: #c1fef6;
+  --cyan-vivid-200: #92fdf2;
+  --cyan-vivid-300: #62f4eb;
+  --cyan-vivid-400: #3ae7e1;
+  --cyan-vivid-500: #1cd4d4;
+  --cyan-vivid-600: #0fb5ba;
+  --cyan-vivid-700: #099aa4;
+  --cyan-vivid-800: #07818f;
+  --cyan-vivid-900: #05606e;
+
+  --red-vivid-050: #ffe3e3;
+  --red-vivid-100: #ffbdbd;
+  --red-vivid-200: #ff9b9b;
+  --red-vivid-300: #f86a6a;
+  --red-vivid-400: #ef4e4e;
+  --red-vivid-500: #e12d39;
+  --red-vivid-600: #cf1124;
+  --red-vivid-700: #ab091e;
+  --red-vivid-800: #8a041a;
+  --red-vivid-900: #610316;
+
+  --yellow-vivid-050: #fffbea;
+  --yellow-vivid-100: #fff3c4;
+  --yellow-vivid-200: #fce588;
+  --yellow-vivid-300: #fadb5f;
+  --yellow-vivid-400: #f7c948;
+  --yellow-vivid-500: #f0b429;
+  --yellow-vivid-600: #de911d;
+  --yellow-vivid-700: #cb6e17;
+  --yellow-vivid-800: #b44d12;
+  --yellow-vivid-900: #8d2b0b;
+}
+
+html {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 112.5%;
+  line-height: 1.5;
+}
+
+/*body {*/
+/*  background-color: var(--blue-900);*/
+/*  color: var(--blue-200);*/
+/*  padding-bottom: 3rem;*/
+/*}*/
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 3rem 1rem;
+  background-color: rgba(255, 255, 255, 0.66);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.component {
+  border: 0.5rem solid var(--color);
+  padding: 1rem;
+}
+
+.component h1,
+.component h2 {
+  color: var(--color);
+}
+
+.parent-component {
+  --color: var(--red-vivid-500);
+}
+
+.child-component {
+  --color: var(--purple-vivid-500);
+}
+
+.total-component {
+  --color: var(--cyan-vivid-800);
+}
+
+.flow > *:not(.sr-only) + * {
+  margin-top: 1em;
+}
+
+.flow-2 > *:not(.sr-only) + * {
+  margin-top: 2em;
+}
+
+.half {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.text ul li {
+  list-style: disc;
+  list-style-position: inside;
+}

@@ -24,10 +24,9 @@
           <div class="wrap">
             <h2>Timed Modal</h2>
             <p>
-              Timed modals typically start counting when you load the page. But
-              we're going to use a button click as a proxy
+              Timed modals typically start counting when you load the page.
             </p>
-            <p>A modal will open 1 second after you click this button.</p>
+            <p>A modal will open 10 seconds after page load.</p>
             <button
               id="timed-modal-button"
               class="button jsModalButton"

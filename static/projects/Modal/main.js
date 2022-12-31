@@ -25,7 +25,7 @@ Modal({
 // Creates a Timed Modal.
 const timedModal = Modal({
   type: 'timed',
-  delayBeforeOpening: 1000,
+  delayBeforeOpening: 8000,
   modalElement: document.querySelector('#timed-modal')
 })
 
