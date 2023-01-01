@@ -23,7 +23,7 @@
     "gsap": "^3.0.4",
     "jquery": "^3.4.1",
     "netlify-identity-widget": "^1.5.6",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.10.1",
     "nuxt-fontawesome": "^0.4.0",
     "serialize-javascript": "^3.1.0",
     "vue-carousel": "^0.18.0",
@@ -39,7 +39,7 @@
     "eslint-plugin-prettier": "^3.0.1",
     "jest": "^24.9.0",
     "prettier": "^1.16.4",
-    "vue-jest": "^3.0.5",
+    "vue-jest": "^4.0.1",
     "vue-test-utils": "^1.0.0-beta.11"
   }
 }
