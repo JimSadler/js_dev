@@ -5,53 +5,63 @@
         <h1>Google Maps Clone</h1>
         <hr />
       </div>
-      <div id="map"></div>
-      <form action="#" class="search-panel" autocomplete="off">
-        <div class="header">
-          <h1>Get driving directions</h1>
-          <p>You can get driving directions from one location to another.</p>
-        </div>
-        <div class="search-panel__body">
-          <div class="search-panel__error"></div>
-          <div class="search-box">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <form action="#" class="search-panel" autocomplete="off">
+              <div class="header">
+                <h1>Get driving directions</h1>
+                <p>You can get driving directions from one location to another.</p>
+              </div>
+              <div class="search-panel__body">
+                <div class="search-panel__error"></div>
+                <div class="search-box">
             <span class="search-box__stopover-icon">
               <svg viewBox="0 0 20 20">
                 <use href="projects/images/destination.svg"></use>
               </svg>
             </span>
-            <input
-              type="search"
-              placeholder="Starting point"
-              style="border-bottom: 2px solid #575bb5"
-            />
-            <button hidden type="button" class="search-box__delete-icon">
-              <svg viewBox="0 0 20 20">
-                <use href="projects/images/sprite.svg#delete"></use>
-              </svg>
-            </button>
+                  <input
+                    type="search"
+                    placeholder="Starting point"
+                    style="border-bottom: 2px solid #575bb5"
+                  />
+                  <button hidden type="button" class="search-box__delete-icon">
+                    <svg viewBox="0 0 20 20">
+                      <use href="projects/images/sprite.svg#delete"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="search-box">
+                  <span class="search-box__stopover-icon"></span>
+                  <input
+                    type="search"
+                    placeholder="Ending Point"
+                    style="border-bottom: 2px solid #575bb5"
+                  />
+                  <button hidden type="button" class="search-box__delete-icon">
+                    <svg viewBox="0 0 20 20">
+                      <use href="projects/images/sprite.svg#delete"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="search-panel__actions">
+                  <button type="submit" class="primary">Get directions</button>
+                  <button type="button" class="secondary" data-js="add-searchbox">
+                    + Add new end point
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div class="directions-panel"></div>
           </div>
-          <div class="search-box">
-            <span class="search-box__stopover-icon"></span>
-            <input
-              type="search"
-              placeholder="Ending Point"
-              style="border-bottom: 2px solid #575bb5"
-            />
-            <button hidden type="button" class="search-box__delete-icon">
-              <svg viewBox="0 0 20 20">
-                <use href="projects/images/sprite.svg#delete"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="search-panel__actions">
-            <button type="submit" class="primary">Get directions</button>
-            <button type="button" class="secondary" data-js="add-searchbox">
-              + Add new end point
-            </button>
+          <div class="col">
+            <div id="map"></div>
           </div>
         </div>
-      </form>
-      <div class="directions-panel"></div>
+      </div>
+<!--      <div id="map"></div>-->
+
     </div>
   </div>
 </template>

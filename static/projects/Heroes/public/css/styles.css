@@ -1,0 +1,294 @@
+/**
+ * base styles and typography
+ * ---------------
+ */
+
+:root {
+  --blue-050: hsl(224, 10%, 78%);
+  --blue-100: hsl(220, 6%, 90%);
+  --blue-200: hsl(225, 12%, 68%);
+  --blue-500: hsl(219, 22%, 31%);
+  --blue-700: hsl(218, 48%, 14%);
+  --blue-800: hsl(219, 67%, 8%);
+  --blue-900: hsl(220, 91%, 5%);
+  --blue-1000: hsl(220, 93%, 4%);
+}
+
+html {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 112.5%;
+  line-height: 1.5;
+}
+
+body {
+  background-color: var(--blue-900);
+  color: var(--blue-200);
+  padding-bottom: 3rem;
+}
+
+.flow > *:not(.sr-only) + * {
+  margin-top: 1em;
+}
+
+.flow-2 > *:not(.sr-only) + * {
+  margin-top: 2em;
+}
+
+h1,
+h2 {
+  color: var(--blue-050);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/*********************
+* Site layout
+**********************/
+.wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.site-header {
+  padding: 2rem 0;
+}
+
+.site-title {
+  margin-bottom: 2rem;
+}
+
+.site-title > * {
+  margin-top: 0.5rem;
+}
+
+.single-column {
+  max-width: 800px;
+  margin: auto;
+}
+
+.sidebar-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 2rem;
+  margin: auto;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+}
+
+/*********************
+* Form Elements
+**********************/
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  padding: 0.75rem;
+  background-color: transparent;
+  border: 2px solid var(--blue-500);
+}
+
+input:focus-within {
+  outline: none;
+  border-color: var(--blue-200);
+}
+
+input.box {
+  padding: 0.75rem 1rem;
+  border-radius: 2rem;
+}
+
+/*******************
+ * Checkbox
+ *******************/
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox label {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox__fakebox {
+  border: 2px solid var(--blue-500);
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.checkbox svg {
+  opacity: 0;
+  position: absolute;
+  font-size: 0.7rem;
+  transform: rotate(-5deg);
+  top: 0.35rem;
+  left: 0.125rem;
+}
+
+.checkbox input:focus ~ label .checkbox__fakebox {
+  border-color: var(--blue-200);
+}
+
+.checkbox input:checked ~ label svg {
+  opacity: 1;
+}
+
+/*********************
+* Components
+**********************/
+.box {
+  background-color: var(--blue-700);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+}
+
+.box__title {
+  margin-top: -0.25rem;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  font-variant: small-caps;
+}
+
+/*******************
+ * Heroes List
+ *******************/
+.heroes-list {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  grid-auto-rows: max-content;
+}
+
+.heroes-list a {
+  position: relative;
+  display: grid;
+  height: 0;
+  padding-bottom: 56.25%;
+  color: inherit;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.heroes-list a:focus {
+  outline: 4px solid var(--blue-100);
+}
+
+.heroes-list a > * {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.heroes-list a > :nth-child(1) {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transform: scale(0.8);
+  font-size: calc(1rem / 1.1);
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.heroes-list a:hover > :nth-child(1),
+.heroes-list a:focus > :nth-child(1) {
+  order: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.heroes-list a img {
+  object-fit: fill;
+  width: 100%;
+}
+
+/*********************
+* Hero Image Page
+**********************/
+.hero-page .site-title {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-page .hero__img {
+  position: relative;
+  top: 0.25em;
+  float: left;
+  width: 256px;
+  height: 144px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+/*********************
+* Hero Abilities
+**********************/
+.abilities {
+  border: 2px solid var(--blue-500);
+  background-color: var(--blue-1000);
+  color: var(--blue-200);
+  padding: 2rem;
+}
+
+.ability {
+  display: grid;
+  grid-template-columns: 4em 1fr;
+  align-items: center;
+  grid-column-gap: 0.75em;
+  grid-row-gap: 0.25em;
+}
+
+.ability + .ability {
+  margin-top: 2rem;
+}
+
+.ability__title {
+  font-size: 0.8em;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  grid-column: 2;
+  font-weight: 600;
+  color: var(--blue-300);
+}
+
+.ability__img {
+  align-self: start;
+  grid-row: 1 / span 2;
+}
+
+.clear::after {
+  display: table;
+  clear: both;
+  content: "";
+}

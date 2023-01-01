@@ -191,12 +191,12 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("~~assets/img/glowing-outer-space-u9zxwwbna6x9s28y-u9zxwwbna6x9s28y.jpg");
+  background-image: url("~~assets/img/nebula-stars-space-4k-2b-1920x1080.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   /* height: 100%; */
   background-position: 53% top;
-  margin-top: -7%;
+  margin-top: 0;
 }
 </style>

@@ -77,7 +77,7 @@ input {
   grid-template-columns: 1fr 1fr;
   height: 100vh;
   overflow: scroll;
-  margin-top: 35%;
+  margin-top: 15%;
   color: #fff
 }
 

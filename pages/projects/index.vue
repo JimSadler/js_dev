@@ -19,21 +19,21 @@
       <div class="row loop_test justify-content-center text-center my-5">
         <div
           class="col-auto mb-3"
-          data-aos="zoom-in-right"
+          data-aos="zoom-in-left"
           data-aos-delay="100"
           data-aos-duration="500"
-          data-aos-easing="ease-in-out"
+          data-aos-easing="ease-in"
+          data-aos-once="true"
           v-for="card in card_row_1" :key="card.name"
         >
 
-          <div class="card" style="width: 18rem" >
+          <div class="card" style="width: 18rem; height: 22rem;" >
             <div class="card-body">
               <img :class="card.icon_size_class" alt :src="card.icon"/>
 
               <h5 class="card-title">{{ card.title }}</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                {{card.description || 'description coming soon.'}}
               </p>
               <nuxt-link :to="card.route"> Check It Out </nuxt-link>
             </div>
@@ -48,18 +48,18 @@
           data-aos="zoom-in-right"
           data-aos-delay="100"
           data-aos-duration="500"
-          data-aos-easing="ease-in-out"
+          data-aos-easing="ease-in-out-sine"
+          data-aos-once="true"
           v-for="card in card_row_2" :key="card.name"
         >
 
-          <div class="card" style="width: 18rem" >
+          <div class="card" style="width: 18rem; height: 22rem;" >
             <div class="card-body">
               <img :class="card.icon_size_class" alt :src="card.icon"/>
 
               <h5 class="card-title">{{ card.title }}</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                {{card.description || 'description coming soon.'}}
               </p>
               <nuxt-link :to="card.route"> Check It Out </nuxt-link>
             </div>
@@ -71,21 +71,21 @@
       <div class="row loop_test justify-content-center text-center my-5">
         <div
           class="col-auto mb-3"
-          data-aos="zoom-in-right"
+          data-aos="zoom-in-left"
           data-aos-delay="100"
           data-aos-duration="500"
-          data-aos-easing="ease-in-out"
+          data-aos-easing="ease-in"
+          data-aos-once="true"
           v-for="card in card_row_3" :key="card.name"
         >
 
-          <div class="card" style="width: 18rem" >
+          <div class="card" style="width: 18rem; height: 22rem;" >
             <div class="card-body">
               <img :class="card.icon_size_class" alt :src="card.icon"/>
 
               <h5 class="card-title">{{ card.title }}</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                {{card.description || 'description coming soon.'}}
               </p>
               <nuxt-link :to="card.route"> Check It Out </nuxt-link>
             </div>
@@ -97,21 +97,21 @@
       <div class="row loop_test justify-content-center text-center my-5">
         <div
           class="col-auto mb-3"
-          data-aos="zoom-in-right"
+          data-aos="zoom-in-left"
           data-aos-delay="100"
           data-aos-duration="500"
-          data-aos-easing="ease-in-out"
+          data-aos-easing="ease-in"
+          data-aos-once="true"
           v-for="card in card_row_4" :key="card.name"
         >
 
-          <div class="card" style="width: 18rem" >
+          <div class="card" style="width: 18rem; height: 22rem;" >
             <div class="card-body">
               <img :class="card.icon_size_class" alt :src="card.icon"/>
 
               <h5 class="card-title">{{ card.title }}</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                {{card.description || 'description coming soon.'}}
               </p>
               <nuxt-link :to="card.route"> Check It Out </nuxt-link>
             </div>
@@ -141,7 +141,7 @@ export default {
         icon: '/projects/images/project_icons/googlemaps.png',
         route: '/GoogleMapsClone',
         title: 'Google Maps Clone',
-        description: '',
+        description: 'Search for addresses, map out directions, plan your route with multiple destinations. There is also an autocomplete when typing. This uses google maps api.',
         icon_size_class: 'testLogo2'
       },
       {
@@ -149,7 +149,7 @@ export default {
         icon: '/projects/images/project_icons/calculator.png',
         route: '/Calculator',
         title: 'Calculator',
-        description: '',
+        description: 'This is an online calculator complete with multiply,divide,subtract and add functionality using whole numbers and decimals.',
         icon_size_class: 'testLogo2'
       },
       {
@@ -157,7 +157,7 @@ export default {
         icon: '/projects/images/project_icons/to-do-list-color-icon-vector-28812967.png',
         route: '/Todo',
         title: 'To Do List',
-        description: '',
+        description: 'This app will allow you to create a todo list. You can check off the todo list items as they are completed, and even remove them. ',
         icon_size_class: 'testLogo2'
       },
       {
@@ -165,7 +165,7 @@ export default {
         icon: '/projects/images/project_icons/datepicker_icon.png',
         route: '/Datepicker',
         title: 'Datepicker',
-        description: '',
+        description: 'This app will let you choose a date on a calendar in the current and future months.',
         icon_size_class: 'testLogo2'
       },
       {
@@ -173,7 +173,7 @@ export default {
         icon: '/projects/images/project_icons/tabset.gif',
         route: '/Tablist',
         title: 'Tablist',
-        description: '',
+        description: 'This is a basic tabset. Completely functional for visual and keyboard/screen reader users.',
         icon_size_class: 'testLogo2'
       }
     ],
@@ -183,7 +183,7 @@ export default {
         icon: '/projects/images/project_icons/accordion_icon2.png',
         route: '/Accordion',
         title: 'Accordion',
-        description: '',
+        description: 'This a a basic accordion set. It is completely accessible for any user.',
         icon_size_class: 'testLogo2'
       },
       {
@@ -191,7 +191,7 @@ export default {
         icon: '/projects/images/project_icons/off_canvas_menu_icon.png',
         route: '/OffCanvasMenu',
         title: 'Off Canvas Menu',
-        description: '',
+        description: 'This is an off screen menu build with vanilla js. It is also user friendly for all users.',
         icon_size_class: 'testLogo2'
       },
       // {
@@ -207,7 +207,7 @@ export default {
         icon: '/projects/images/project_icons/modal_icon.png',
         route: '/Modal',
         title: 'Modal',
-        description: '',
+        description: 'This modal example is built with vanilla js. there is a timed modal example and a button triggered example. 508 compliant.',
         icon_size_class: 'testLogo2'
       },
       {
@@ -215,7 +215,7 @@ export default {
         icon: '/projects/images/project_icons/popover.png',
         route: '/Popover',
         title: 'Popover',
-        description: '',
+        description: 'This is a popover example. All of the positioning of the popover windows were done with JS.',
         icon_size_class: 'testLogo2'
       },
       {
@@ -223,7 +223,7 @@ export default {
         icon: '/projects/images/project_icons/tiny_framework_icon.png',
         route: '/Tiny',
         title: 'Tiny Framework',
-        description: '',
+        description: 'This is a basic javascript framework. It is a basic counter, but the numbers increase, even in nested components.',
         icon_size_class: 'testLogo2'
       },
     ],
@@ -233,51 +233,51 @@ export default {
         icon: '/projects/images/project_icons/slide_icon.gif',
         route: '/SlideReveal',
         title: 'Slide to Reveal',
-        description: '',
+        description: 'This is an example of using javascript to create animations on a scroll event.',
         icon_size_class: 'testLogo3'
       },
       {
         name: 'spinning_pacman',
         icon: '/projects/images/project_icons/pacman.gif',
-        route: '/',
+        route: '/SpinningPacman',
         title: 'Spinning Pac Man',
-        description: '',
+        description: 'Pacman follows your mouse movement. All done with vanilla javascript.',
         icon_size_class: 'testLogo3'
       },
       {
         name: 'sticky_nav',
         icon: '/projects/images/project_icons/sticky_icon.gif',
-        route: '/',
+        route: '/StickyNav',
         title: 'Sticky Nav',
-        description: '',
+        description: 'This is a javascript sticky navigation while watching the scrolling event',
         icon_size_class: 'testLogo3'
       },
       {
         name: 'typeahead',
         icon: '/projects/images/project_icons/type_ahead.gif',
-        route: '/',
+        route: '/TypeAhead',
         title: 'Typeahead',
-        description: '',
+        description: 'This is a basic typeahead. This app makes a call to an api to get the countries of the world data.',
         icon_size_class: 'testLogo3'
       },
       {
         name: 'drag_drop',
         icon: '/projects/images/project_icons/drag.gif',
-        route: '/',
+        route: '/DragDrop',
         title: 'Drag and Drop',
-        description: '',
+        description: 'This app showcases moving color boxes from one place to another using multiple event listeners.',
         icon_size_class: 'testLogo3'
       }
     ],
     card_row_4: [
-      {
-        name: 'carousel',
-        icon: '/projects/images/project_icons/carousel_icon.png',
-        route: '/',
-        title: 'Carousel',
-        description: '',
-        icon_size_class: 'testLogo3'
-      },
+      // {
+      //   name: 'carousel',
+      //   icon: '/projects/images/project_icons/carousel_icon.png',
+      //   route: '/Carousel',
+      //   title: 'Carousel',
+      //   description: '',
+      //   icon_size_class: 'testLogo3'
+      // },
       // {
       //   name: 'tiny_framework',
       //   icon: '/projects/images/project_icons/tiny_framework_icon.png',
@@ -290,8 +290,8 @@ export default {
         name: 'spa',
         icon: '/projects/images/project_icons/spa_icon.png',
         route: '/',
-        title: 'Single Page Application',
-        description: '',
+        title: 'Heroes',
+        description: 'This is an application that interfaces with a heroes api to get hero data. (Coming Soon)',
         icon_size_class: 'testLogo3'
       },
 

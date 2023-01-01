@@ -175,7 +175,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("~~assets/img/glowing-outer-space-u9zxwwbna6x9s28y-u9zxwwbna6x9s28y.jpg");
+  background-image: url("~~assets/img/black-hole-4mnirpi3le97v1b3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

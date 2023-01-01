@@ -198,7 +198,7 @@ h1 > *:nth-child(4n + 4) {
   position: absolute;
   top: 0;
   left: 0;
-  max-width: var(--max-width, 14em);
+  max-width: 17em;
   padding: 1.5em;
   border-radius: 0.5em;
   background-color: #fff;

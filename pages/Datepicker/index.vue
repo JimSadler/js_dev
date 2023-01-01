@@ -71,7 +71,7 @@ export default {
   background-attachment: fixed;
   /* height: 100%; */
   background-position: 53% top;
-  margin-top: -7%;
+  margin-top: 0;
 }
 .datepicker {
   /* left: auto;

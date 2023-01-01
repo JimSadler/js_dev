@@ -1,7 +1,7 @@
 <template>
   <div >
     <div  class="slideRevealPage">
-        <div style="margin-top: 20rem; height: 70%; width: 75%; margin-bottom: 5rem; padding-bottom: 5rem; background-color: rgba(255, 255, 255, 0.26);">
+        <div style="margin-top: 12rem; height: 70%; width: 75%; margin-bottom: 10rem; padding-bottom: 5rem;">
           <div class="header">
             <div class="leading-line"></div>
             <div style="margin-bottom: 10em;">
@@ -138,7 +138,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("~~assets/img/glowing-outer-space-u9zxwwbna6x9s28y-u9zxwwbna6x9s28y.jpg");
+  background-image: url("~~assets/img/supermassive-space-black-hole-5k.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

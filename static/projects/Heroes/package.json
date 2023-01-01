@@ -1,0 +1,16 @@
+{
+  "name": "dota-spa",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "author": "Zell Liew <zellwk@gmail.com> (https://zellwk.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

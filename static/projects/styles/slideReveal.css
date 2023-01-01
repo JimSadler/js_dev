@@ -39,8 +39,9 @@ html {
 /*}*/
 
 h1 [data-value="5"] {
-  font-size: 3.75em;
+  font-size: 5.75em !important;
   grid-column: 2;
+  color: #fff;
 }
 
 h1 [data-value="of-my"] {
@@ -52,12 +53,14 @@ h1 [data-value="of-my"] {
   position: relative;
   top: -1.9em;
   font-size: 0.5em;
+  color: #fff;
 }
 
 h1 [data-value="favourite"] {
   grid-column: 3;
   grid-row: 1;
   font-size: 1em;
+  color: #fff;
 }
 
 h1 [data-value="books"] {
@@ -66,6 +69,7 @@ h1 [data-value="books"] {
   font-size: 1em;
   position: relative;
   top: 1em;
+  color: #fff;
 }
 
 h1::after {
@@ -97,6 +101,7 @@ main > * {
   grid-template-rows: min-content min-content;
   opacity: 0;
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  color: #fff
 }
 
 .book:nth-child(odd) {
@@ -128,7 +133,7 @@ main > * {
 
 .book .comment {
   grid-column: 2;
-  color: var(--text-color);
+  color: #fff;
 }
 
 .book + .book {
